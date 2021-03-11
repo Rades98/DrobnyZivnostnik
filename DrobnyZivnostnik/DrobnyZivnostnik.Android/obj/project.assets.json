@@ -6571,11 +6571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\DrobnyZivnostnik.Android.csproj",
+      "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\DrobnyZivnostnik.Android.csproj",
       "projectName": "DrobnyZivnostnik.Android",
-      "projectPath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\DrobnyZivnostnik.Android.csproj",
+      "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\DrobnyZivnostnik.Android.csproj",
       "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\obj\\",
+      "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -6602,8 +6602,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj": {
-              "projectPath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj"
+            "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj": {
+              "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj"
             }
           }
         }

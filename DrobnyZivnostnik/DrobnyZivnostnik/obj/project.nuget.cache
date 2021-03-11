@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7hLKY3kUKgTKOnpXEurl74rrXSoY6ABc5sAPid7YngpltoX3/3200u16FPSr88U/tVzkaUnHTsJbpsTVUKoWng==",
+  "dgSpecHash": "R3rXi1IqMBQFvmn9duRvRySO3mtQOvHL7PnWoW8VdVxeDq3fQgcGJBRUtkn2Z5JP/S88MTeehK1xa7iLED6wJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj",
+  "projectFilePath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radek.reznicek\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\radek.reznicek\\.nuget\\packages\\behaviors.forms\\1.4.0\\behaviors.forms.1.4.0.nupkg.sha512",

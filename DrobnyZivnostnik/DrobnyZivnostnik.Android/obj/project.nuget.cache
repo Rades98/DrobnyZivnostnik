@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/9U3FMeiBk35J/SMAi/pTPSp1vg94aESI/VrK9X+2mELnoT3G3PBuNhvhgzeQn6CjQwkUa0yAmfyFp0CfRGUgQ==",
+  "dgSpecHash": "OwlbnvfMV+6LAvwSZge62ZCCKQSUtSoolPpSSz+MyjBhwO4vnshePKm6nKmqrXZsZLl1tg8fqfzSPaMbjClMMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\DrobnyZivnostnik.Android.csproj",
+  "projectFilePath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.Android\\DrobnyZivnostnik.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radek.reznicek\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\radek.reznicek\\.nuget\\packages\\behaviors.forms\\1.4.0\\behaviors.forms.1.4.0.nupkg.sha512",

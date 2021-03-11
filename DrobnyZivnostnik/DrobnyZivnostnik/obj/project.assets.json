@@ -6272,11 +6272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj",
+      "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj",
       "projectName": "DrobnyZivnostnik",
-      "projectPath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj",
+      "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj",
       "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radek.reznicek\\Desktop\\kody\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\obj\\",
+      "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
