@@ -20,3 +20,8 @@ Packages: <br />
 # About project
 Mobile app for small tradesmen, which will help them with invoicing, 
 travel orders and counting neccessary details for Czech administration.
+
+#Pictures/Icons etc
+https://www.clipartkey.com/view/JhwTTw_transparent-invoices-png/ </br>
+https://www.clipartkey.com/view/wiRmJb_svg-car-icon-free-download-onlinewebfonts-com-file/ </br>
+https://www.clipartkey.com/view/iRiboiJ_holding-briefcase-man-with-briefcase-png-icon/ </br>
