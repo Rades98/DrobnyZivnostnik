@@ -1,0 +1,9 @@
+﻿<forms:ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                          xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
+                          xmlns:forms="http://xamarin.com/schemas/2014/forms">
+
+  <forms:Style ApplyToDerivedTypes="True" TargetType="controls:AxiosContentPage">
+    <forms:Setter Property="BackgroundImageSource" Value="MainBackground.png" />
+  </forms:Style>
+
+</forms:ResourceDictionary>
