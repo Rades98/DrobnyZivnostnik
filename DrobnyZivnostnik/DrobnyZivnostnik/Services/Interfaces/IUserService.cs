@@ -35,7 +35,11 @@
         Task<ICollection<UserListModel>> GetUserListAsync();
 
         /// <summary>
-        /// Sets the user active.
+        /// Sets user active flag
+        /// Active user is for managing data
+        /// to show only data of currently active user
+        /// Case application allows user to make several
+        /// user accounts on one device
         /// </summary>
         /// <param name="userId">The user identifier.</param>
         /// <returns></returns>

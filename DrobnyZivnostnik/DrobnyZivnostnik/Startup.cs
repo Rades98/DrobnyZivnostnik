@@ -9,14 +9,24 @@
     using Services.Interfaces;
     using Xamarin.Forms;
 
+    /// <summary>
+    /// Custom startup - made because of testing 
+    /// </summary>
     public static class Startup
     {
         public static void StartUp()
         {
-            var task = Task.Run(async () => await PseudoSeedAsync());
+#if DEBUG
+            var task = Task.Run(async () => await PseudoSeedAsync()); // ONLY FOR DEBUG
             task.Wait();
+#endif
         }
 
+        /// <summary>
+        /// Pseudoseed asynchronous.
+        /// Adds data to db for testing
+        /// </summary>
+        /// <returns></returns>
         private static async Task<ObservableCollection<UserListModel>> PseudoSeedAsync()
         {
             var addressService = DependencyService.Resolve<IAddressService>();

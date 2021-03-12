@@ -15,7 +15,7 @@
   </MasterDetailPage.BindingContext>
 
   <MasterDetailPage.Master>
-    <ContentPage Title="Menu" BackgroundColor="LightGray">
+    <ContentPage Title="Menu" BackgroundImageSource="MainBackground.png">
       <StackLayout Orientation="Vertical">
         <Grid VerticalOptions="FillAndExpand">
           <Grid.RowDefinitions>
@@ -24,13 +24,13 @@
           </Grid.RowDefinitions>
 
           <controls:LocalizedLabel Grid.Row="0"
+                                   FontSize="Large"
                                    HorizontalTextAlignment="Center"
                                    LabelTextKey="Axios.Views.MainPage.Menu.Title"
                                    TextColor="White"
                                    VerticalTextAlignment="Center" />
 
           <ListView Grid.Row="1"
-                    BackgroundColor="DimGray"
                     RowHeight="100"
                     SelectedItem="{Binding SelectedItem}"
                     SeparatorVisibility="Default">
@@ -58,20 +58,33 @@
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell>
-                  <StackLayout Padding="10"
-                               Orientation="Horizontal"
-                               Spacing="20"
-                               VerticalOptions="FillAndExpand">
-                    <Image Source="{Binding IconSource}" />
-                    <controls:LocalizedLabel HorizontalTextAlignment="Center"
-                                             LabelTextKey="{Binding Title}"
-                                             VerticalTextAlignment="Center" />
+                  <StackLayout Padding="10">
+                    <StackLayout Padding="10" BackgroundColor="DimGray">
+                      <Grid>
+                        <Grid.ColumnDefinitions>
+                          <ColumnDefinition Width="1*" />
+                          <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0">
+                          <Image HorizontalOptions="FillAndExpand"
+                                 Source="{Binding IconSource}"
+                                 VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+
+                        <controls:LocalizedLabel Grid.Column="1"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"
+                                                 LabelTextKey="{Binding Title}"
+                                                 VerticalOptions="CenterAndExpand"
+                                                 VerticalTextAlignment="Center" />
+                      </Grid>
+                    </StackLayout>
                   </StackLayout>
                 </ViewCell>
               </DataTemplate>
             </ListView.ItemTemplate>
           </ListView>
-
         </Grid>
       </StackLayout>
 

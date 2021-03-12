@@ -2,7 +2,6 @@
 namespace DrobnyZivnostnik
 {
     using System.Diagnostics;
-    using System.Linq;
     using Xamarin.Forms;
 
     public static class Utils

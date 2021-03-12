@@ -12,7 +12,9 @@
 
         public AppDbContext()
         {
-            this.Database.EnsureDeleted();
+#if DEBUG
+            this.Database.EnsureDeleted(); // ONLY FOR DEBUG
+#endif
             this.Database.EnsureCreated();
         }
 
