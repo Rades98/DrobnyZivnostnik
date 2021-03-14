@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -9,6 +9,26 @@
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Drawable\Bacgrounds\MainBackground.png" />
+    <None Remove="Resources\Drawable\ButtonIcons\Add.png" />
+    <None Remove="Resources\Drawable\ButtonIcons\ThrashCan.png" />
+    <None Remove="Resources\Drawable\CompanyLogo.png" />
+    <None Remove="Resources\Drawable\MenuIcons\Invoice.png" />
+    <None Remove="Resources\Drawable\MenuIcons\TravelOrder.png" />
+    <None Remove="Resources\Drawable\MenuIcons\Users.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Drawable\Bacgrounds\MainBackground.png" />
+    <EmbeddedResource Include="Resources\Drawable\ButtonIcons\Add.png" />
+    <EmbeddedResource Include="Resources\Drawable\ButtonIcons\ThrashCan.png" />
+    <EmbeddedResource Include="Resources\Drawable\CompanyLogo.png" />
+    <EmbeddedResource Include="Resources\Drawable\MenuIcons\Invoice.png" />
+    <EmbeddedResource Include="Resources\Drawable\MenuIcons\TravelOrder.png" />
+    <EmbeddedResource Include="Resources\Drawable\MenuIcons\Users.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
@@ -23,22 +43,37 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\User\UserListView.xaml.cs">
-      <DependentUpon>UserListView.xaml</DependentUpon>
+    <Compile Update="Views\MasterMenuView.xaml.cs">
+      <DependentUpon>MasterMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\User\User_AddVehicleView.xaml.cs">
+      <DependentUpon>User_AddVehicleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\User\UserDetailView.xaml.cs">
+      <DependentUpon>UserDetailView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resources\Converters.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\ApplicationStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\LocalizationResource.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MasterPage.xaml">
+    <EmbeddedResource Update="Views\MainDetailView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\User\UserListView.xaml">
+    <EmbeddedResource Update="Views\MasterMenuView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\User\User_AddVehicleView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\User\UserDetailView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\User\UserSettingsView.xaml">
@@ -47,6 +82,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Converters\" />
+    <Folder Include="Models\ModelIncludes\" />
   </ItemGroup>
 </Project>

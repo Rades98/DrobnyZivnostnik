@@ -1,30 +1,26 @@
 ﻿namespace DrobnyZivnostnik.ViewModels
 {
-    using System;
-    using System.Threading.Tasks;
-    using System.Windows.Input;
     using Models.MasterPage;
+    using System.Windows.Input;
     using Xamarin.Forms;
-    using static Xamarin.Forms.Application;
 
     public class MasterViewModel : BaseViewModel
     {
-        public MasterPageItem SelectedItem { get; set; }
-
         public ICommand OnItemSelectCommand { get; set; }
 
         public MasterViewModel()
         {
-            OnItemSelectCommand = new Command(async () => await GoToSelectedPage());
+            OnItemSelectCommand = new Command(GoToSelectedPage);
         }
 
-        private async Task GoToSelectedPage()
+        private static void GoToSelectedPage(object param)
         {
-            if (Current.MainPage is MasterDetailPage navPage)
+            if (!(param is MasterPageItem selectedItem))
             {
-                await navPage.Detail.Navigation.PushAsync((ContentPage)Activator.CreateInstance(SelectedItem.TargetType));
-                navPage.IsPresented = false;
+                return;
             }
+
+            GoToPage(selectedItem.TargetType);
         }
     }
 }

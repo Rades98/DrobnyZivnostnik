@@ -2,7 +2,11 @@
 namespace DrobnyZivnostnik.Models.User
 {
     using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.ComponentModel.DataAnnotations.Schema;
     using Address;
+    using Vehicle;
 
     /// <summary>
     /// USer model
@@ -16,14 +20,6 @@ namespace DrobnyZivnostnik.Models.User
         /// The user identifier.
         /// </value>
         public Guid UserId { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether this instance is active.
-        /// </summary>
-        /// <value>
-        ///   <c>true</c> if this instance is active; otherwise, <c>false</c>.
-        /// </value>
-        public bool IsActive { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="UserModel"/> is deleted.
@@ -104,5 +100,22 @@ namespace DrobnyZivnostnik.Models.User
         /// The place of business.
         /// </value>
         public AddressModel PlaceOfBusiness { get; set; }
+
+        /// <summary>
+        /// Gets or sets the vehicles.
+        /// </summary>
+        /// <value>
+        /// The vehicles.
+        /// </value>
+        public ObservableCollection<VehicleModel> Vehicles { get; set; }
+
+        /// <summary>
+        /// Gets the full name.
+        /// </summary>
+        /// <value>
+        /// The full name.
+        /// </value>
+        [NotMapped] 
+        public string FullName => $"{Name} {Surname}";
     }
 }

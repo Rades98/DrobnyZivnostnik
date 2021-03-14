@@ -9,6 +9,7 @@
     {
         public DbSet<Address> Address { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<Vehicle> Vehicle { get; set; }
 
         public AppDbContext()
         {

@@ -9,6 +9,8 @@
     /// <seealso cref="Xamarin.Forms.Label" />
     class LocalizedLabel : Label
     {
+        //TODO Attributes + handling
+
         /// <summary>
         /// The label text key property
         /// </summary>

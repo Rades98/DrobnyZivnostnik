@@ -5,5 +5,4 @@
   <forms:Style ApplyToDerivedTypes="True" TargetType="controls:AxiosContentPage">
     <forms:Setter Property="BackgroundImageSource" Value="MainBackground.png" />
   </forms:Style>
-
 </forms:ResourceDictionary>

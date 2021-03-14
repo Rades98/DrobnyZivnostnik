@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.MasterMenuView"
+                           xmlns="http://xamarin.com/schemas/2014/forms"
+                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                           xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+                           xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
+                           xmlns:converters="clr-namespace:DrobnyZivnostnik.Converters;assembly=DrobnyZivnostnik"
+                           xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
+                           xmlns:masterPage="clr-namespace:DrobnyZivnostnik.Models.MasterPage;assembly=DrobnyZivnostnik"
+                           xmlns:user="clr-namespace:DrobnyZivnostnik.Views.User;assembly=DrobnyZivnostnik"
+                           xmlns:viewModels="clr-namespace:DrobnyZivnostnik.ViewModels;assembly=DrobnyZivnostnik"
+                           Title="Master">
+
+  <controls:AxiosContentPage.BindingContext>
+    <viewModels:MasterViewModel />
+  </controls:AxiosContentPage.BindingContext>
+
+  <StackLayout Orientation="Vertical">
+    <Grid VerticalOptions="FillAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
+      <controls:LocalizedLabel Grid.Row="0"
+                               FontSize="Large"
+                               HorizontalTextAlignment="Center"
+                               LabelTextKey="Axios.Views.MainPage.Menu.Title"
+                               TextColor="White"
+                               VerticalTextAlignment="Center" />
+
+      <ListView x:Name="MasterListView"
+                Grid.Row="1"
+                RowHeight="100"
+                SeparatorVisibility="Default">
+        <ListView.ItemsSource>
+          <x:Array Type="{x:Type masterPage:MasterPageItem}">
+            <masterPage:MasterPageItem Title="Axios.Views.MainPage.Menu.Items.Invoice"
+                                       IconSource="ButtonIcons.Invoice.png"
+                                       TargetType="{x:Type user:UserDetailView}" />
+            <masterPage:MasterPageItem Title="Axios.Views.MainPage.Menu.Items.TravelOrder"
+                                       IconSource="ButtonIcons.TravelOrder.png"
+                                       TargetType="{x:Type user:UserDetailView}" />
+            <masterPage:MasterPageItem Title="Axios.Views.MainPage.Menu.Items.Users"
+                                       IconSource="ButtonIcons.Users.png"
+                                       TargetType="{x:Type user:UserDetailView}" />
+          </x:Array>
+        </ListView.ItemsSource>
+        <ListView.Behaviors>
+          <behaviors:EventHandlerBehavior EventName="ItemSelected">
+            <behaviors:ActionCollection>
+              <behaviors:InvokeCommandAction Command="{Binding OnItemSelectCommand}" CommandParameter="{Binding SelectedItem, Source={x:Reference MasterListView}}" />
+            </behaviors:ActionCollection>
+          </behaviors:EventHandlerBehavior>
+
+        </ListView.Behaviors>
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="10">
+                <StackLayout Padding="10"
+                             BackgroundColor="DimGray"
+                             Opacity="0.8">
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="1*" />
+                      <ColumnDefinition Width="4*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0">
+                      <controls:AxiosImage HorizontalOptions="FillAndExpand"
+                                           Source="{Binding IconSource}"
+                                           VerticalOptions="FillAndExpand" />
+                    </StackLayout>
+
+                    <controls:LocalizedLabel Grid.Column="1"
+                                             HorizontalOptions="CenterAndExpand"
+                                             HorizontalTextAlignment="Center"
+                                             LabelTextKey="{Binding Title}"
+                                             VerticalOptions="CenterAndExpand"
+                                             VerticalTextAlignment="Center" />
+                  </Grid>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </Grid>
+  </StackLayout>
+</controls:AxiosContentPage>

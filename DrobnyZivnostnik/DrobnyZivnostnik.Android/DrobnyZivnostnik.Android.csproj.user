@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Xiaomi Redmi Note 7</SelectedDevice>
     <DefaultDevice>phone_m-dpi_5_4in_pie_9_0_-_api_28</DefaultDevice>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>

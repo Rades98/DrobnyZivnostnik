@@ -6,6 +6,7 @@
   <Application.Resources>
 
     <ResourceDictionary>
+      <ResourceDictionary Source="Resources/Converters.xaml" />
       <ResourceDictionary Source="Resources/LocalizationResource.xaml" />
       <ResourceDictionary Source="Resources/ApplicationStyles.xaml" />
     </ResourceDictionary>
