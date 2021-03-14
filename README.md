@@ -25,3 +25,5 @@ travel orders and counting neccessary details for Czech administration.
 https://www.clipartkey.com/view/JhwTTw_transparent-invoices-png/ </br>
 https://www.clipartkey.com/view/wiRmJb_svg-car-icon-free-download-onlinewebfonts-com-file/ </br>
 https://www.clipartkey.com/view/iRiboiJ_holding-briefcase-man-with-briefcase-png-icon/ </br>
+https://www.clipartkey.com/view/hxmwhm_garbage-garbage-can-delete-waste-waste-bins-waste/</br>
+https://www.clipartkey.com/view/wmRmxh_plus-add-cross-outline-white-add-icon-png/ </br>
