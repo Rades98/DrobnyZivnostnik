@@ -8,6 +8,7 @@
     public sealed class AppDbContext : DbContext, IAppDbContext
     {
         public DbSet<Address> Address { get; set; }
+        public DbSet<TravelOrderFront> TravelOrderFront { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<Vehicle> Vehicle { get; set; }
 

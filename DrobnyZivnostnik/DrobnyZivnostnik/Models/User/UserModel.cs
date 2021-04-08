@@ -1,11 +1,11 @@
-﻿
-namespace DrobnyZivnostnik.Models.User
+﻿namespace DrobnyZivnostnik.Models.User
 {
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.ComponentModel.DataAnnotations.Schema;
     using Address;
+    using Annotations;
     using Vehicle;
 
     /// <summary>
@@ -19,6 +19,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The user identifier.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.UserId")]
         public Guid UserId { get; set; }
 
         /// <summary>
@@ -27,6 +28,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         ///   <c>true</c> if deleted; otherwise, <c>false</c>.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.Deleted")]
         public bool Deleted { get; set; }
 
         /// <summary>
@@ -35,6 +37,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The name.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -43,6 +46,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The surname.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.Surname")]
         public string Surname { get; set; }
 
         /// <summary>
@@ -51,6 +55,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The identifying number.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.IdentifyingNumber")]
         public string IdentifyingNumber { get; set; }
 
         /// <summary>
@@ -59,6 +64,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The creation date.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.CreationDate")]
         public DateTime CreationDate { get; set; }
 
         /// <summary>
@@ -67,7 +73,8 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The address identifier.
         /// </value>
-        public Guid AddressId { get; set; }
+        [AxiosTextKey("Axios.Models.UserModel.AddressId")]
+        public Guid? AddressId { get; set; }
 
         /// <summary>
         /// Gets or sets the place of business identifier.
@@ -75,7 +82,8 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The place of business identifier.
         /// </value>
-        public Guid PlaceOfBusinessId { get; set; }
+        [AxiosTextKey("Axios.Models.UserModel.PlaceOfBusinessId")]
+        public Guid? PlaceOfBusinessId { get; set; }
 
         /// <summary>
         /// Gets or sets the image path.
@@ -83,6 +91,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The image path.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.ImagePath")]
         public string ImagePath { get; set; }
 
         /// <summary>
@@ -91,6 +100,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The address.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.Address")]
         public AddressModel Address { get; set; }
 
         /// <summary>
@@ -99,6 +109,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The place of business.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.PlaceOfBusiness")]
         public AddressModel PlaceOfBusiness { get; set; }
 
         /// <summary>
@@ -107,6 +118,7 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The vehicles.
         /// </value>
+        [AxiosTextKey("Axios.Models.UserModel.Vehicles")]
         public ObservableCollection<VehicleModel> Vehicles { get; set; }
 
         /// <summary>
@@ -115,7 +127,18 @@ namespace DrobnyZivnostnik.Models.User
         /// <value>
         /// The full name.
         /// </value>
-        [NotMapped] 
+        [NotMapped]
+        [AxiosTextKey("Axios.Models.UserModel.FullName")]
         public string FullName => $"{Name} {Surname}";
+
+        /// <summary>
+        /// Gets or sets the phone number.
+        /// </summary>
+        /// <value>
+        /// The phone number.
+        /// </value>
+        [AxiosRequired]
+        [AxiosTextKey("Axios.Models.UserModel.PhoneNumber")]
+        public string PhoneNumber { get; set; }
     }
 }

@@ -3,9 +3,11 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\LocalizationResource.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\MainDetailView.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\MasterMenuView.xaml.g.cs
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\TravelOrder\TravelOrderDetailView.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\User\UserDetailView.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\User\UserSettingsView.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\User\User_AddVehicleView.xaml.g.cs
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\User\Vehicle\Vehicle_EditVehicle.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.AssemblyInfoInputs.cache
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.AssemblyInfo.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.csproj.CoreCompileInputs.cache
@@ -18,4 +20,3 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\DrobnyZivnostnik.pdb
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.csprojAssemblyReference.cache
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\Converters.xaml.g.cs

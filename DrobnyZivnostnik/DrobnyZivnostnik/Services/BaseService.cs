@@ -1,16 +1,14 @@
 ﻿namespace DrobnyZivnostnik.Services
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
     using AutoMapper;
     using Database;
     using Database.Entities;
     using Extensions;
-    using Microsoft.EntityFrameworkCore;
+    using System;
+    using System.Threading.Tasks;
     using Xamarin.Forms;
 
-    public class BaseService<TModel, TEntity> where TModel : class where TEntity : class, IEntity
+    public class BaseService<TModel, TEntity> where TModel : class where TEntity : Entity
     {
         private readonly IMapper _mapper;
         private readonly AppDbContext _dbContext;
@@ -23,7 +21,7 @@
             _mapper = DependencyService.Get<IMapper>();
             _dbContext = (AppDbContext)DependencyService.Get<IAppDbContext>();
         }
-        
+
         /// <inheritdoc/>
         public async Task AddAsync(TModel model)
         {

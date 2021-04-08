@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.TravelOrder.TravelOrderDetailView"
+                           xmlns="http://xamarin.com/schemas/2014/forms"
+                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                           xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
+                           xmlns:travelOrder="clr-namespace:DrobnyZivnostnik.ViewModels.TravelOrder;assembly=DrobnyZivnostnik"
+                           xmlns:travelOrderType="clr-namespace:DrobnyZivnostnik.Models.TravelOrder;assembly=DrobnyZivnostnik">
+  <controls:AxiosContentPage.BindingContext>
+    <travelOrder:TravelOrderListViewModel />
+  </controls:AxiosContentPage.BindingContext>
+
+  <NavigationPage.TitleView>
+    <controls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.TravelOrder" />
+  </NavigationPage.TitleView>
+
+  <controls:AxiosContentPage.Content>
+    <StackLayout>
+      <CollectionView ItemsSource="{Binding Models}" SelectionMode="None">
+        <CollectionView.Header>
+          <Grid>
+            <controls:AxiosLocalizedLabel FontAttributes="Italic"
+                                          FontSize="Large"
+                                          HorizontalOptions="Start"
+                                          LabelTextKey="Axios.Views.MainPage.Menu.Items.TravelOrder"
+                                          TextColor="Black"
+                                          VerticalOptions="Center" />
+
+          </Grid>
+        </CollectionView.Header>
+        <CollectionView.ItemTemplate>
+          <DataTemplate>
+            <SwipeView>
+              <SwipeView.RightItems>
+                <SwipeItems>
+                  <SwipeItemView Padding="10">
+                    <StackLayout Orientation="Horizontal" WidthRequest="200">
+                      <StackLayout Padding="20" HorizontalOptions="Start">
+
+                        <StackLayout.GestureRecognizers>
+                          <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type travelOrder:TravelOrderListViewModel}}, Path=EditCommand}"
+                                                CommandParameter="{Binding .}"
+                                                NumberOfTapsRequired="1" />
+                        </StackLayout.GestureRecognizers>
+
+                        <Grid BackgroundColor="LightGreen">
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                          </Grid.ColumnDefinitions>
+                          <StackLayout Grid.Column="0" Padding="20">
+                            <Image Source="Checked.png" />
+                          </StackLayout>
+
+                          <controls:AxiosLocalizedLabel Grid.Column="1"
+                                                        FontAttributes="Bold"
+                                                        FontSize="Body"
+                                                        LabelTextKey="Axios.Views.TravelOrder.EndTravelOrder"
+                                                        TextColor="Black"
+                                                        VerticalOptions="CenterAndExpand" />
+                        </Grid>
+
+                      </StackLayout>
+                    </StackLayout>
+                  </SwipeItemView>
+                </SwipeItems>
+              </SwipeView.RightItems>
+              <StackLayout Padding="10" BackgroundColor="white">
+                <StackLayout Padding="10">
+
+                  <ContentView BackgroundColor="Gray"
+                               Opacity="0.7"
+                               VerticalOptions="FillAndExpand" />
+
+                  <StackLayout Orientation="Horizontal">
+                    <controls:AxiosLocalizedLabel FontAttributes="Bold"
+                                                  LabelSource="StartDate"
+                                                  LabelSourceType="{x:Type travelOrderType:TravelOrderFrontModel}"
+                                                  TextColor="Black" />
+                    <Label FontAttributes="Italic"
+                           Text="{Binding StartDate}"
+                           TextColor="Black" />
+                  </StackLayout>
+
+                  <StackLayout Orientation="Horizontal">
+                    <controls:AxiosLocalizedLabel FontAttributes="Bold"
+                                                  LabelSource="StartPlace"
+                                                  LabelSourceType="{x:Type travelOrderType:TravelOrderFrontModel}"
+                                                  TextColor="Black" />
+                    <Label FontAttributes="Italic"
+                           Text="{Binding StartPlace}"
+                           TextColor="Black" />
+                  </StackLayout>
+
+                  <StackLayout Orientation="Horizontal">
+                    <controls:AxiosLocalizedLabel FontAttributes="Bold"
+                                                  LabelSource="EndPlace"
+                                                  LabelSourceType="{x:Type travelOrderType:TravelOrderFrontModel}"
+                                                  TextColor="Black" />
+                    <Label FontAttributes="Italic"
+                           Text="{Binding EndPlace}"
+                           TextColor="Black" />
+                  </StackLayout>
+                </StackLayout>
+              </StackLayout>
+            </SwipeView>
+          </DataTemplate>
+        </CollectionView.ItemTemplate>
+      </CollectionView>
+    </StackLayout>
+  </controls:AxiosContentPage.Content>
+</controls:AxiosContentPage>

@@ -1,10 +1,13 @@
 ﻿namespace DrobnyZivnostnik.Controls
 {
     using System.ComponentModel;
+    using Services.Interfaces;
     using Xamarin.Forms;
 
-    class LocalizedPicker : Picker
+    class AxiosLocalizedPicker : Picker
     {
+        private static readonly ILocalizationService LocalizationService = DependencyService.Get<ILocalizationService>();
+
         /// <summary>
         /// The Title text key property
         /// </summary>
@@ -12,7 +15,7 @@
             BindableProperty.Create(
                 nameof(TitleTextKey),
                 typeof(string),
-                typeof(LocalizedPicker),
+                typeof(AxiosLocalizedPicker),
                 default(string),
                 propertyChanged: OnTitleTextKeyPropertyChanged);
 
@@ -31,7 +34,7 @@
         /// <param name="newValue">The new value.</param>
         static void OnTitleTextKeyPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            ((Picker)bindable).Title = Utils.GetResourceByKey((string)newValue);
+            ((Picker)bindable).Title = LocalizationService.GetResourceByKey((string)newValue);
         }
     }
 }

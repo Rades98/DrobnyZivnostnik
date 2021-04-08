@@ -5,7 +5,7 @@
     using System.ComponentModel.DataAnnotations.Schema;
 
     [Table("Vehicle")]
-    public class Vehicle : IEntity
+    public class Vehicle : Entity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -27,7 +27,5 @@
         public string FuelType { get; set; }
 
         public string ImagePath { get; set; }
-
-        public bool Deleted { get; set; }
     }
 }

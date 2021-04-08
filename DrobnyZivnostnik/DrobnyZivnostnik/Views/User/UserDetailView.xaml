@@ -3,12 +3,13 @@
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
-                           xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
                            xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
+                           xmlns:userModel="clr-namespace:DrobnyZivnostnik.Models.User;assembly=DrobnyZivnostnik"
+                           xmlns:vehicle="clr-namespace:DrobnyZivnostnik.Models.Vehicle;assembly=DrobnyZivnostnik"
                            x:Name="UserDetail">
 
   <NavigationPage.TitleView>
-    <controls:LocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.Users" />
+    <controls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.Users" />
   </NavigationPage.TitleView>
 
   <controls:AxiosContentPage.BindingContext>
@@ -51,14 +52,18 @@
             <StackLayout Grid.Row="1"
                          Grid.Column="1"
                          Orientation="Horizontal">
-              <controls:LocalizedLabel LabelTextKey="Axios.Views.UserDetailView.IdentifyingNumber" TextColor="Black" />
+              <controls:AxiosLocalizedLabel LabelSource="IdentifyingNumber"
+                                            LabelSourceType="{x:Type userModel:UserModel}"
+                                            TextColor="Black" />
               <Label Text="{Binding Model.IdentifyingNumber}" TextColor="Black" />
             </StackLayout>
 
             <StackLayout Grid.Row="2"
                          Grid.Column="1"
                          Orientation="Horizontal">
-              <controls:LocalizedLabel LabelTextKey="Axios.Views.UserDetailView.CreationDate" TextColor="Black" />
+              <controls:AxiosLocalizedLabel LabelSource="CreationDate"
+                                            LabelSourceType="{x:Type userModel:UserModel}"
+                                            TextColor="Black" />
               <Label Text="{Binding Model.CreationDate, StringFormat='{0:dd.MM.yyyy}'}" TextColor="Black" />
             </StackLayout>
           </Grid>
@@ -91,22 +96,23 @@
               <CollectionView ItemsSource="{Binding Vehicles}" SelectionMode="None">
                 <CollectionView.Header>
                   <Grid>
-                    <controls:LocalizedLabel FontAttributes="Italic"
-                                             FontSize="Large"
-                                             HorizontalOptions="Start"
-                                             LabelTextKey="Axios.Views.UserDetailView.Vehicles"
-                                             TextColor="Black"
-                                             VerticalOptions="Center" />
+                    <controls:AxiosLocalizedLabel FontAttributes="Italic"
+                                                  FontSize="Large"
+                                                  HorizontalOptions="Start"
+                                                  LabelSource="Vehicles"
+                                                  LabelSourceType="{x:Type userModel:UserModel}"
+                                                  TextColor="Black"
+                                                  VerticalOptions="Center" />
 
                     <StackLayout Padding="10"
                                  HorizontalOptions="End"
                                  Opacity="0.7">
                       <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                        <controls:AxiosImage HeightRequest="35" Source="ButtonIcons.Add.png" />
-                        <controls:LocalizedLabel FontSize="Body"
-                                                 HorizontalOptions="Center"
-                                                 TextColor="Black"
-                                                 VerticalOptions="Center" />
+                        <Image HeightRequest="35" Source="Add.png" />
+                        <controls:AxiosLocalizedLabel FontSize="Body"
+                                                      HorizontalOptions="Center"
+                                                      TextColor="Black"
+                                                      VerticalOptions="Center" />
                         <StackLayout.GestureRecognizers>
                           <TapGestureRecognizer Command="{Binding AddVehicle}" NumberOfTapsRequired="1" />
                         </StackLayout.GestureRecognizers>
@@ -120,9 +126,9 @@
                     <SwipeView>
                       <SwipeView.RightItems>
                         <SwipeItems>
-                          <SwipeItemView>
+                          <SwipeItemView Padding="10">
                             <StackLayout Orientation="Horizontal" WidthRequest="200">
-                              <StackLayout Padding="10" HorizontalOptions="Start">
+                              <StackLayout Padding="20" HorizontalOptions="Start">
 
                                 <StackLayout.GestureRecognizers>
                                   <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type user:UserDetailViewModel}}, Path=DeleteCommand}"
@@ -135,12 +141,12 @@
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />
                                   </Grid.ColumnDefinitions>
-                                  <controls:AxiosImage Grid.Column="0" Source="ButtonIcons.ThrashCan.png" />
-                                  <controls:LocalizedLabel Grid.Column="1"
-                                                           FontAttributes="Bold"
-                                                           FontSize="Body"
-                                                           LabelTextKey="Axios.Views.Common.Delete"
-                                                           VerticalOptions="CenterAndExpand" />
+                                  <Image Grid.Column="0" Source="ThrashCan.png" />
+                                  <controls:AxiosLocalizedLabel Grid.Column="1"
+                                                                FontAttributes="Bold"
+                                                                FontSize="Body"
+                                                                LabelTextKey="Axios.Views.Common.Delete"
+                                                                VerticalOptions="CenterAndExpand" />
                                 </Grid>
 
                               </StackLayout>
@@ -156,18 +162,20 @@
                                  Text="{Binding Name}"
                                  TextColor="Black" />
                           <StackLayout Orientation="Horizontal">
-                            <controls:LocalizedLabel FontAttributes="Italic"
-                                                     LabelTextKey="Axios.Views.UserDetailView.Vehicles.NumberPlate"
-                                                     TextColor="Black" />
+                            <controls:AxiosLocalizedLabel FontAttributes="Italic"
+                                                          LabelSource="NumberPlate"
+                                                          LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                                          TextColor="Black" />
                             <Label FontAttributes="Italic"
                                    Text="{Binding NumberPlate}"
                                    TextColor="Black" />
                           </StackLayout>
 
                           <StackLayout Orientation="Horizontal">
-                            <controls:LocalizedLabel FontAttributes="Italic"
-                                                     LabelTextKey="Axios.Views.UserDetailView.Vehicles.VehicleType"
-                                                     TextColor="Black" />
+                            <controls:AxiosLocalizedLabel FontAttributes="Italic"
+                                                          LabelSource="VehicleType"
+                                                          LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                                          TextColor="Black" />
                             <Label FontAttributes="Italic"
                                    Text="{Binding VehicleType}"
                                    TextColor="Black" />

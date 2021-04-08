@@ -8,6 +8,7 @@
     using Database;
     using Database.Entities;
     using Models.Address;
+    using Models.TravelOrder;
     using Models.User;
     using Models.Vehicle;
     using Services;
@@ -27,10 +28,16 @@
             DependencyService.RegisterSingleton(CreateAutoMapper());
             DependencyService.Register<IAppDbContext, AppDbContext>();
 
-            //Services
+            //Other services
+            DependencyService.Register<IMessageService, MessageService>();
+            DependencyService.Register<ILocalizationService, LocalizationService>();
+
+            //Data based Services
             DependencyService.Register<IAddressService, AddressService>();
             DependencyService.Register<IUserService, UserService>();
             DependencyService.Register<IVehicleService, VehicleService>();
+            DependencyService.Register<ITravelOrderService, TravelOrderService>();
+            
 
 #if DEBUG
             var task = Task.Run(async () => await PseudoSeedAsync()); // ONLY FOR DEBUG
@@ -48,8 +55,13 @@
             {
                 cfg.CreateMap<Address, AddressModel>();
                 cfg.CreateMap<AddressModel, Address>();
+
+                cfg.CreateMap<TravelOrderFront, TravelOrderFrontModel>();
+                cfg.CreateMap<TravelOrderFrontModel, TravelOrderFront>();
+
                 cfg.CreateMap<User, UserModel>();
                 cfg.CreateMap<UserModel, User>();
+
                 cfg.CreateMap<Vehicle, VehicleModel>();
                 cfg.CreateMap<VehicleModel, Vehicle>();
             }).CreateMapper();
@@ -65,14 +77,15 @@
             var addressService = DependencyService.Resolve<IAddressService>();
             var userService = DependencyService.Resolve<IUserService>();
             var vehicleSerice = DependencyService.Resolve<IVehicleService>();
+            var travelOrderService = DependencyService.Resolve<ITravelOrderService>();
 
             var address = new AddressModel()
             {
-                City = "Čudnohor",
+                City = "Čeladná",
                 Deleted = false,
-                HouseNumber = "123",
-                Street = "Nejaka ulice",
-                ZipCode = "12345"
+                HouseNumber = "551",
+                Street = "Čeladná 551",
+                ZipCode = "73912"
             };
 
 
@@ -84,13 +97,14 @@
 
             var user = new UserModel()
             {
-                Name = "Tamten",
-                Surname = "Teuton",
+                Name = "Lenka",
+                Surname = "Břenková",
                 Deleted = false,
                 AddressId = id,
-                IdentifyingNumber = "12132132",
+                IdentifyingNumber = "02193761",
                 CreationDate = DateTime.Now,
-                ImagePath = "sssssss"
+                ImagePath = "Users.png",
+                PhoneNumber = "776 235 266"
             };
 
             await userService.AddAsync(user);
@@ -119,17 +133,21 @@
 
             await vehicleSerice.AddAsync(vehicle2);
 
-            var vehicle3 = new VehicleModel()
+            var travelOrder = new TravelOrderFrontModel()
             {
-                Name = "Skázostroj",
                 Deleted = false,
-                FuelConsumption = 8.8,
-                FuelType = "Benzín",
-                NumberPlate = "AAA AAAA",
-                VehicleType = "O"
+                ArrivalTime = TimeSpan.Parse("8:00"),
+                DepartmentTime = TimeSpan.Parse("18:00"),
+                EndDate = DateTime.Now,
+                EndPlace = "Kunčice p. O.",
+                MeetingPurpose = "Pokecat s rodinkou",
+                PlaceOfMeeting = "Domeček od Radka",
+                StartDate = DateTime.Now,
+                StartPlace = "Čeladná",
+                TravelLength = TimeSpan.Parse("10:00")
             };
 
-            await vehicleSerice.AddAsync(vehicle3);
+            await travelOrderService.AddAsync(travelOrder);
         }
     }
 }

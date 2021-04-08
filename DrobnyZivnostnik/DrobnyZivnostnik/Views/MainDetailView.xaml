@@ -6,7 +6,7 @@
                            xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
                            BackgroundColor="Transparent">
   <NavigationPage.TitleView>
-    <controls:LocalizedLabel FontSize="Large" LabelTextKey="SYYYYYYYYYYYYYYYYYYY" />
+    <controls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="" />
   </NavigationPage.TitleView>
 
   <controls:AxiosContentPage.Content>
@@ -19,16 +19,16 @@
                      Opacity="0.7"
                      VerticalOptions="FillAndExpand" />
         <StackLayout>
-          <controls:LocalizedLabel FontSize="Large"
-                                   HorizontalOptions="CenterAndExpand"
-                                   LabelTextKey="Axios.Views.MainPage.Detail.Title"
-                                   TextColor="Black"
-                                   VerticalOptions="CenterAndExpand" />
-          <controls:LocalizedLabel Padding="20"
-                                   HorizontalOptions="StartAndExpand"
-                                   LabelTextKey="Axios.Views.MainPage.Detail.Info"
-                                   TextColor="Black"
-                                   VerticalOptions="StartAndExpand" />
+          <controls:AxiosLocalizedLabel FontSize="Large"
+                                        HorizontalOptions="CenterAndExpand"
+                                        LabelTextKey="Axios.Views.MainPage.Detail.Title"
+                                        TextColor="Black"
+                                        VerticalOptions="CenterAndExpand" />
+          <controls:AxiosLocalizedLabel Padding="20"
+                                        HorizontalOptions="StartAndExpand"
+                                        LabelTextKey="Axios.Views.MainPage.Detail.Info"
+                                        TextColor="Black"
+                                        VerticalOptions="StartAndExpand" />
         </StackLayout>
       </Grid>
 
@@ -38,10 +38,10 @@
                      VerticalOptions="FillAndExpand" />
         <StackLayout Padding="20,0,20,0">
 
-          <controls:AxiosImage HeightRequest="50"
-                               HorizontalOptions="CenterAndExpand"
-                               Source="CompanyLogo.png"
-                               VerticalOptions="FillAndExpand" />
+          <Image HeightRequest="50"
+                 HorizontalOptions="CenterAndExpand"
+                 Source="CompanyLogo.png"
+                 VerticalOptions="FillAndExpand" />
         </StackLayout>
       </Grid>
     </StackLayout>

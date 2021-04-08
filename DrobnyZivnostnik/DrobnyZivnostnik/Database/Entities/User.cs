@@ -5,14 +5,11 @@
     using System.ComponentModel.DataAnnotations.Schema;
 
     [Table("User")]
-    public class User : IEntity
+    public class User : Entity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid UserId { get; set; }
-
-        [Required]
-        public bool Deleted { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -32,5 +29,9 @@
         public Guid AddressId { get; set; }
 
         public Guid? PlaceOfBusinessId { get; set; }
+
+        [Phone]
+        [Required]
+        public string PhoneNumber { get; set; }
     }
 }

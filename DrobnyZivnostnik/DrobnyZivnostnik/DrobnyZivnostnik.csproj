@@ -11,26 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Drawable\Bacgrounds\MainBackground.png" />
-    <None Remove="Resources\Drawable\ButtonIcons\Add.png" />
-    <None Remove="Resources\Drawable\ButtonIcons\ThrashCan.png" />
-    <None Remove="Resources\Drawable\CompanyLogo.png" />
-    <None Remove="Resources\Drawable\MenuIcons\Invoice.png" />
-    <None Remove="Resources\Drawable\MenuIcons\TravelOrder.png" />
-    <None Remove="Resources\Drawable\MenuIcons\Users.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Drawable\Bacgrounds\MainBackground.png" />
-    <EmbeddedResource Include="Resources\Drawable\ButtonIcons\Add.png" />
-    <EmbeddedResource Include="Resources\Drawable\ButtonIcons\ThrashCan.png" />
-    <EmbeddedResource Include="Resources\Drawable\CompanyLogo.png" />
-    <EmbeddedResource Include="Resources\Drawable\MenuIcons\Invoice.png" />
-    <EmbeddedResource Include="Resources\Drawable\MenuIcons\TravelOrder.png" />
-    <EmbeddedResource Include="Resources\Drawable\MenuIcons\Users.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Behaviors.Forms" Version="1.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
@@ -55,9 +35,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Converters.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Resources\ApplicationStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -70,6 +47,9 @@
     <EmbeddedResource Update="Views\MasterMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\TravelOrder\TravelOrderDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\User\User_AddVehicleView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -79,9 +59,8 @@
     <EmbeddedResource Update="Views\User\UserSettingsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\ModelIncludes\" />
+    <EmbeddedResource Update="Views\User\Vehicle\Vehicle_EditVehicle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

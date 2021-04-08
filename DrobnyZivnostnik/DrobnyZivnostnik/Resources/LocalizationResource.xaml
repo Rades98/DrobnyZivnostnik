@@ -4,12 +4,47 @@
                           xmlns:s="clr-namespace:System;assembly=mscorlib">
   <!--  ReSharper disable InconsistentNaming  -->
 
+  <s:String x:Key="Axios.Annotations.Required">Pole je povinné</s:String>
+
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.ArrivalTime">Příjezd čas</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.Active">Aktivní</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.DepartmentTime">Odjezd čas</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.EndDate">Datum konce</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.EndPlace">Místo konce</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.MeetingPurpose">Účel a průbeh cesty</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.PlaceOfMeeting">Místo jednání</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.StartDate">Datum počátku</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.StartPlace">Místo počátku</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.TravelLength">Doba cesty</s:String>
+  <s:String x:Key="Axios.Models.TravelOrderFrontModel.TravelOrderFrontId">Id cestovního příkazu</s:String>
+
+  <s:String x:Key="Axios.Models.UserModel.Address">Adresa</s:String>
+  <s:String x:Key="Axios.Models.UserModel.AddressId">Id Adresy</s:String>
+  <s:String x:Key="Axios.Models.UserModel.CreationDate">Datum založení živnosti</s:String>
+  <s:String x:Key="Axios.Models.UserModel.FullName">Jméno</s:String>
+  <s:String x:Key="Axios.Models.UserModel.IdentifyingNumber">IČ</s:String>
+  <s:String x:Key="Axios.Models.UserModel.ImagePath">Cesta k obrázku</s:String>
+  <s:String x:Key="Axios.Models.UserModel.Name">Jméno</s:String>
+  <s:String x:Key="Axios.Models.UserModel.PhoneNumber">Telefon</s:String>
+  <s:String x:Key="Axios.Models.UserModel.PlaceOfBusiness">Místo výkonu</s:String>
+  <s:String x:Key="Axios.Models.UserModel.PlaceOfBusinessId">Id místa výkonu</s:String>
+  <s:String x:Key="Axios.Models.UserModel.Surname">Příjmení</s:String>
+  <s:String x:Key="Axios.Models.UserModel.UserId">Id uživatele</s:String>
+  <s:String x:Key="Axios.Models.UserModel.Vehicles">Vozidla</s:String>
+
+  <s:String x:Key="Axios.Models.VehicleModel.FuelConsumption">Spotřeba PHM dle TP</s:String>
+  <s:String x:Key="Axios.Models.VehicleModel.FuelType">Typ PHM</s:String>
+  <s:String x:Key="Axios.Models.VehicleModel.Name">Název</s:String>
+  <s:String x:Key="Axios.Models.VehicleModel.NumberPlate">SPZ</s:String>
+  <s:String x:Key="Axios.Models.VehicleModel.VehicleType">Typ vozidla</s:String>
+
   <s:String x:Key="Axios.Values.FuelType.Diesel">Nafta</s:String>
   <s:String x:Key="Axios.Values.FuelType.Petrol">Benzín</s:String>
   <s:String x:Key="Axios.Views.Common.Add">Přidat</s:String>
   <s:String x:Key="Axios.Views.Common.Delete">Smazat</s:String>
+  <s:String x:Key="Axios.Views.Common.Error">Chyba</s:String>
+  <s:String x:Key="Axios.Views.Common.Ok">Ok</s:String>
   <s:String x:Key="Axios.Views.Common.Save">Uložit</s:String>
-
 
   <s:String x:Key="Axios.Views.MainPage.Detail.Info">Ještě nevím co ale něco velice zajímavého a určitě ne tak zbytečného jako tohle, bude třeba se pobavit a zjistit.. co a jak.. zatím vůbec nemám představu.. menu to má, tak nevím, co bych tu tak chtěl mít, třeba vizitku.. nebo tak</s:String>
   <s:String x:Key="Axios.Views.MainPage.Detail.Title">Asi nějaký text</s:String>
@@ -17,17 +52,9 @@
   <s:String x:Key="Axios.Views.MainPage.Menu.Items.Invoice">Faktury</s:String>
   <s:String x:Key="Axios.Views.MainPage.Menu.Items.TravelOrder">Pracovní cesty</s:String>
   <s:String x:Key="Axios.Views.MainPage.Menu.Items.Users">Uživatel</s:String>
-  <s:String x:Key="Axios.Views.UserAddVehicleView.FuelConsumption">Spotřeba PHM dle TP</s:String>
-  <s:String x:Key="Axios.Views.UserAddVehicleView.FuelType">Typ PHM:</s:String>
-  <s:String x:Key="Axios.Views.UserAddVehicleView.FuelTypeSelect">Zvolte typ PHM</s:String>
-  <s:String x:Key="Axios.Views.UserAddVehicleView.Name">Název:</s:String>
-  <s:String x:Key="Axios.Views.UserAddVehicleView.NumberPlate">SPZ:</s:String>
-  <s:String x:Key="Axios.Views.UserAddVehicleView.VehicleType">Typ vozidla:</s:String>
-  <s:String x:Key="Axios.Views.UserDetailView.CreationDate">Datum založení živnosti:</s:String>
-  <s:String x:Key="Axios.Views.UserDetailView.IdentifyingNumber">IČO:</s:String>
-  <s:String x:Key="Axios.Views.UserDetailView.Address">Adresa</s:String>
-  <s:String x:Key="Axios.Views.UserDetailView.Vehicles">Vozidla</s:String>
-  <s:String x:Key="Axios.Views.UserDetailView.Vehicles.NumberPlate">SPZ:</s:String>
-  <s:String x:Key="Axios.Views.UserDetailView.Vehicles.VehicleType">Typ vozidla:</s:String>
+
+  <s:String x:Key="Axios.Views.TravelOrder.EndTravelOrder">Ukončit cestovní příkaz</s:String>
+
+
 
 </forms:ResourceDictionary>

@@ -4,11 +4,10 @@
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
                            xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
-                           xmlns:converters="clr-namespace:DrobnyZivnostnik.Converters;assembly=DrobnyZivnostnik"
-                           xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
                            xmlns:masterPage="clr-namespace:DrobnyZivnostnik.Models.MasterPage;assembly=DrobnyZivnostnik"
                            xmlns:user="clr-namespace:DrobnyZivnostnik.Views.User;assembly=DrobnyZivnostnik"
                            xmlns:viewModels="clr-namespace:DrobnyZivnostnik.ViewModels;assembly=DrobnyZivnostnik"
+                           xmlns:travelOrde="clr-namespace:DrobnyZivnostnik.Views.TravelOrder;assembly=DrobnyZivnostnik"
                            Title="Master">
 
   <controls:AxiosContentPage.BindingContext>
@@ -22,7 +21,7 @@
         <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
 
-      <controls:LocalizedLabel Grid.Row="0"
+      <controls:AxiosLocalizedLabel Grid.Row="0"
                                FontSize="Large"
                                HorizontalTextAlignment="Center"
                                LabelTextKey="Axios.Views.MainPage.Menu.Title"
@@ -36,13 +35,13 @@
         <ListView.ItemsSource>
           <x:Array Type="{x:Type masterPage:MasterPageItem}">
             <masterPage:MasterPageItem Title="Axios.Views.MainPage.Menu.Items.Invoice"
-                                       IconSource="ButtonIcons.Invoice.png"
+                                       IconSource="Invoice.png"
                                        TargetType="{x:Type user:UserDetailView}" />
             <masterPage:MasterPageItem Title="Axios.Views.MainPage.Menu.Items.TravelOrder"
-                                       IconSource="ButtonIcons.TravelOrder.png"
-                                       TargetType="{x:Type user:UserDetailView}" />
+                                       IconSource="TravelOrder.png"
+                                       TargetType="{x:Type travelOrde:TravelOrderDetailView}" />
             <masterPage:MasterPageItem Title="Axios.Views.MainPage.Menu.Items.Users"
-                                       IconSource="ButtonIcons.Users.png"
+                                       IconSource="Users.png"
                                        TargetType="{x:Type user:UserDetailView}" />
           </x:Array>
         </ListView.ItemsSource>
@@ -68,12 +67,12 @@
                     </Grid.ColumnDefinitions>
 
                     <StackLayout Grid.Column="0">
-                      <controls:AxiosImage HorizontalOptions="FillAndExpand"
+                      <Image HorizontalOptions="FillAndExpand"
                                            Source="{Binding IconSource}"
                                            VerticalOptions="FillAndExpand" />
                     </StackLayout>
 
-                    <controls:LocalizedLabel Grid.Column="1"
+                    <controls:AxiosLocalizedLabel Grid.Column="1"
                                              HorizontalOptions="CenterAndExpand"
                                              HorizontalTextAlignment="Center"
                                              LabelTextKey="{Binding Title}"

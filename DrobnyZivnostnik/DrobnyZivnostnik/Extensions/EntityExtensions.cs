@@ -8,7 +8,7 @@
         /// Soft delete for entities
         /// </summary>
         /// <param name="entity">The entity.</param>
-        public static void SoftDelete(this IEntity entity)
+        public static void SoftDelete(this Entity entity)
         {
             entity.Deleted = true;
         }

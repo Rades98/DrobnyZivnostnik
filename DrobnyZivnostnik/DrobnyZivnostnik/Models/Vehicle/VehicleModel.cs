@@ -1,6 +1,7 @@
 ﻿namespace DrobnyZivnostnik.Models.Vehicle
 {
     using System;
+    using Annotations;
 
     public class VehicleModel
     {
@@ -10,6 +11,7 @@
         /// <value>
         /// The vehicle identifier.
         /// </value>
+        [AxiosTextKeyAttribute("Axios.Models.VehicleModel.VehicleId")]
         public Guid VehicleId { get; set; }
 
         /// <summary>
@@ -18,6 +20,8 @@
         /// <value>
         /// The name.
         /// </value>
+        [AxiosRequired]
+        [AxiosTextKeyAttribute("Axios.Models.VehicleModel.Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -26,6 +30,8 @@
         /// <value>
         /// The type of the vehicle.
         /// </value>
+        [AxiosRequired]
+        [AxiosTextKeyAttribute("Axios.Models.VehicleModel.VehicleType")]
         public string VehicleType { get; set; }
 
         /// <summary>
@@ -34,6 +40,8 @@
         /// <value>
         /// The number plate.
         /// </value>
+        [AxiosRequired]
+        [AxiosTextKeyAttribute("Axios.Models.VehicleModel.NumberPlate")]
         public string NumberPlate { get; set; }
 
         /// <summary>
@@ -42,7 +50,9 @@
         /// <value>
         /// The fuel consumption.
         /// </value>
-        public double FuelConsumption { get; set; }
+        [AxiosRequired]
+        [AxiosTextKeyAttribute("Axios.Models.VehicleModel.FuelConsumption")]
+        public double? FuelConsumption { get; set; }
 
         /// <summary>
         /// Gets or sets the type of the fuel.
@@ -50,6 +60,8 @@
         /// <value>
         /// The type of the fuel.
         /// </value>
+        [AxiosRequired]
+        [AxiosTextKeyAttribute("Axios.Models.VehicleModel.FuelType")]
         public string FuelType { get; set; }
 
         /// <summary>

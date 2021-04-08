@@ -613,13 +613,13 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\invoice.png
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\companylogo.png
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\add.png
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\thrashcan.png
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\mainbackground.png
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\invoice.png
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\travelorder.png
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\users.png
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\thrashcan.png
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\add.png
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\companylogo.png
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\uploadflags.txt
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\assets\AutoMapper.dll
@@ -1123,3 +1123,4 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\checked.png

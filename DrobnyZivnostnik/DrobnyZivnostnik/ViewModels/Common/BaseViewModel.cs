@@ -1,15 +1,26 @@
-﻿namespace DrobnyZivnostnik.ViewModels
+﻿namespace DrobnyZivnostnik.ViewModels.Common
 {
     using System;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
     using Controls;
+    using Services.Interfaces;
     using Xamarin.Forms;
 
     public class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        
+
+        public readonly IMessageService MessageService;
+        public readonly ILocalizationService LocalizationService;
+
+        protected BaseViewModel()
+        {
+            MessageService = DependencyService.Get<IMessageService>();
+            LocalizationService = DependencyService.Get<ILocalizationService>();
+        }
+
+
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

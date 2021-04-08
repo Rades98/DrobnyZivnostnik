@@ -5,14 +5,11 @@
     using System.ComponentModel.DataAnnotations.Schema;
 
     [Table("Address")]
-    public class Address : IEntity
+    public class Address : Entity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid AddressId { get; set; }
-
-        [Required]
-        public bool Deleted { get; set; }
 
         [Required]
         public string City { get; set; }

@@ -4,7 +4,8 @@
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
                            xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
-                           xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik">
+                           xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
+                           xmlns:vehicle="clr-namespace:DrobnyZivnostnik.Models.Vehicle;assembly=DrobnyZivnostnik">
   <controls:AxiosContentPage.BindingContext>
     <user:UserDetailAddVehicle />
   </controls:AxiosContentPage.BindingContext>
@@ -25,10 +26,12 @@
                      Padding="20,0,20,0"
                      Orientation="Horizontal">
           <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:LocalizedLabel FontSize="Body" LabelTextKey="Axios.Views.UserAddVehicleView.Name" />
+            <controls:AxiosLocalizedLabel FontSize="Body"
+                                          LabelSource="Name"
+                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
           </StackLayout>
           <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding NewVehicle.Name}" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model.Name}" />
           </StackLayout>
         </StackLayout>
 
@@ -36,10 +39,12 @@
                      Padding="20,0,20,0"
                      Orientation="Horizontal">
           <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:LocalizedLabel FontSize="Body" LabelTextKey="Axios.Views.UserAddVehicleView.NumberPlate" />
+            <controls:AxiosLocalizedLabel FontSize="Body"
+                                          LabelSource="NumberPlate"
+                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
           </StackLayout>
           <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding NewVehicle.NumberPlate}" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model.NumberPlate}" />
           </StackLayout>
         </StackLayout>
 
@@ -47,10 +52,12 @@
                      Padding="20,0,20,0"
                      Orientation="Horizontal">
           <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:LocalizedLabel FontSize="Body" LabelTextKey="Axios.Views.UserAddVehicleView.VehicleType" />
+            <controls:AxiosLocalizedLabel FontSize="Body"
+                                          LabelSource="VehicleType"
+                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
           </StackLayout>
           <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding NewVehicle.VehicleType}" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model.VehicleType}" />
           </StackLayout>
         </StackLayout>
 
@@ -58,12 +65,12 @@
                      Padding="20,0,20,0"
                      Orientation="Horizontal">
           <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:LocalizedLabel FontSize="Body" LabelTextKey="Axios.Views.UserAddVehicleView.FuelType" />
+            <controls:AxiosLocalizedLabel FontSize="Body"
+                                          LabelSource="FuelType"
+                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
           </StackLayout>
           <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <controls:LocalizedPicker ItemsSource="{Binding FuelType}"
-                                      SelectedItem="{Binding NewVehicle.FuelType, Mode=TwoWay}"
-                                      TitleTextKey="Axios.Views.UserAddVehicleView.FuelTypeSelect" />
+            <controls:AxiosLocalizedPicker ItemsSource="{Binding FuelType}" SelectedItem="{Binding Model.FuelType, Mode=TwoWay}" />
           </StackLayout>
         </StackLayout>
 
@@ -71,10 +78,14 @@
                      Padding="20,0,20,0"
                      Orientation="Horizontal">
           <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:LocalizedLabel FontSize="Body" LabelTextKey="Axios.Views.UserAddVehicleView.FuelConsumption" />
+            <controls:AxiosLocalizedLabel FontSize="Body"
+                                          LabelSource="FuelConsumption"
+                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
           </StackLayout>
           <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding NewVehicle.FuelConsumption}" />
+            <Entry HorizontalOptions="FillAndExpand"
+                   Keyboard="Numeric"
+                   Text="{Binding Model.FuelConsumption}" />
           </StackLayout>
         </StackLayout>
 
@@ -82,11 +93,11 @@
           <StackLayout HorizontalOptions="Center"
                        Orientation="Horizontal"
                        VerticalOptions="Center">
-            <Image HeightRequest="35" Source="ButtonIcons.Add.png" />
-            <controls:LocalizedLabel FontSize="Body"
-                                     HorizontalOptions="Center"
-                                     LabelTextKey="Axios.Views.Common.Save"
-                                     VerticalOptions="Center" />
+            <Image HeightRequest="35" Source="Add.png" />
+            <controls:AxiosLocalizedLabel FontSize="Body"
+                                          HorizontalOptions="Center"
+                                          LabelTextKey="Axios.Views.Common.Save"
+                                          VerticalOptions="Center" />
             <StackLayout.GestureRecognizers>
               <TapGestureRecognizer Command="{Binding SaveCommand}" NumberOfTapsRequired="1" />
             </StackLayout.GestureRecognizers>

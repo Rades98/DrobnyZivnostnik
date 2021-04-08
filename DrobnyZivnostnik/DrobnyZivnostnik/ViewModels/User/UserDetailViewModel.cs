@@ -1,6 +1,5 @@
 ﻿namespace DrobnyZivnostnik.ViewModels.User
 {
-    using System;
     using System.Collections.ObjectModel;
     using System.Threading.Tasks;
     using System.Windows.Input;
@@ -22,10 +21,10 @@
 
         public ICommand AddVehicle { get; set; }
         public ICommand DeleteCommand { get; set; }
-     
 
         public UserDetailViewModel()
         {
+            RefreshAsyncSource();
             DeleteCommand = new Command(async (x) => await DeleteVehicle(x));
             AddVehicle = new Command(() => GoToPage(typeof(User_AddVehicleView)));
         }
