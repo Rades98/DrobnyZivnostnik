@@ -1,8 +1,8 @@
 ﻿namespace DrobnyZivnostnik.Views
 {
-    using AxiosControls.Controls;
+    using Xamarin.Forms;
 
-    public partial class MasterMenuView : AxiosContentPage
+    public partial class MasterMenuView : ContentPage
     {
         public MasterMenuView()
         {

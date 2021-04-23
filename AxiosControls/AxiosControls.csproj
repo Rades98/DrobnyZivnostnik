@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <Description>Axios Controls</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Version>0.0.1</Version>
+    <RepositoryUrl>https://github.com/Rades98/DrobnyZivnostnik</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
