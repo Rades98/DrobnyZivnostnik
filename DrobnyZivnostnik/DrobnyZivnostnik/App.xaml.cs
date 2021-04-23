@@ -27,7 +27,7 @@
             MainPage = new MasterDetailPage
             {
                 BackgroundColor = Color.Transparent, 
-                Master = new MasterMenuView(), 
+                Master = new MasterMenuView() { BackgroundColor = Color.Transparent}, 
                 Detail = new MainDetailView()
             };
         }

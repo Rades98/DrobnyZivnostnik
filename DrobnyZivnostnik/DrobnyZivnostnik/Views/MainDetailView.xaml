@@ -12,35 +12,30 @@
   <controls:AxiosContentPage.Content>
     <StackLayout>
 
-      <controls:AxiosGrid Padding="40"
+      <controls:AxiosGrid Padding="20"
                           HorizontalOptions="CenterAndExpand"
                           VerticalOptions="CenterAndExpand">
         <StackLayout>
-          <localizedControls:AxiosLocalizedLabel FontSize="Large"
-                                                 HorizontalOptions="CenterAndExpand"
+          <localizedControls:AxiosLocalizedLabel HorizontalOptions="CenterAndExpand"
                                                  LabelTextKey="Axios.Views.MainPage.Detail.Title"
-                                                 TextColor="Black"
+                                                 Style="{StaticResource Key=HeaderTextStyle}"
                                                  VerticalOptions="CenterAndExpand" />
           <localizedControls:AxiosLocalizedLabel Padding="20"
                                                  HorizontalOptions="StartAndExpand"
                                                  LabelTextKey="Axios.Views.MainPage.Detail.Info"
-                                                 TextColor="Black"
                                                  VerticalOptions="StartAndExpand" />
         </StackLayout>
       </controls:AxiosGrid>
 
-      <Grid Padding="20" HeightRequest="50">
-        <ContentView BackgroundColor="LightGray"
-                     Opacity="0.7"
-                     VerticalOptions="FillAndExpand" />
-        <StackLayout Padding="20,0,20,0">
 
-          <Image HeightRequest="50"
-                 HorizontalOptions="CenterAndExpand"
-                 Source="CompanyLogo.png"
-                 VerticalOptions="FillAndExpand" />
-        </StackLayout>
-      </Grid>
+      <StackLayout Padding="20,0,20,0">
+
+        <Image HeightRequest="50"
+               HorizontalOptions="CenterAndExpand"
+               Source="CompanyLogo.png"
+               VerticalOptions="FillAndExpand" />
+      </StackLayout>
+
     </StackLayout>
   </controls:AxiosContentPage.Content>
 </controls:AxiosContentPage>

@@ -9,6 +9,7 @@
       <ResourceDictionary Source="Resources/LocalizationResource.xaml" />
       <ResourceDictionary Source="Resources/AxiosComponentsStyles.xaml" />
       <ResourceDictionary Source="Resources/ComponentsStyles.xaml" />
+      <ResourceDictionary Source="Resources/FontStyles.xaml" />
     </ResourceDictionary>
 
   </Application.Resources>

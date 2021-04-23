@@ -1,3 +1,4 @@
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.csprojAssemblyReference.cache
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\DrobnyZivnostnik.deps.json
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\DrobnyZivnostnik.dll
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\ref\DrobnyZivnostnik.dll
@@ -16,8 +17,10 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\Axios.pdb
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\Domain.pdb
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\bin\Debug\netstandard2.1\Persistence.pdb
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.csprojAssemblyReference.cache
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\AxiosComponentsStyles.xaml.g.cs
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\ComponentsStyles.xaml.g.cs
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\FontStyles.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\LocalizationResource.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\MainDetailView.xaml.g.cs
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Views\MasterMenuView.xaml.g.cs
@@ -34,5 +37,3 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.dll
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\ref\DrobnyZivnostnik.dll
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.pdb
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\AxiosComponentsStyles.xaml.g.cs
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\ComponentsStyles.xaml.g.cs

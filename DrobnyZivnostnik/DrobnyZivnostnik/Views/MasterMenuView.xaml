@@ -1,36 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.MasterMenuView"
-                           xmlns="http://xamarin.com/schemas/2014/forms"
-                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
-                           xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
-                           xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
-                           xmlns:masterPage="clr-namespace:DrobnyZivnostnik.Models.MasterPage;assembly=DrobnyZivnostnik"
-                           xmlns:travelOrde="clr-namespace:DrobnyZivnostnik.Views.TravelOrder;assembly=DrobnyZivnostnik"
-                           xmlns:user="clr-namespace:DrobnyZivnostnik.Views.User;assembly=DrobnyZivnostnik"
-                           xmlns:viewModels="clr-namespace:DrobnyZivnostnik.ViewModels;assembly=DrobnyZivnostnik"
-                           Title="Master">
+<ContentPage x:Class="DrobnyZivnostnik.Views.MasterMenuView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+             xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
+             xmlns:masterPage="clr-namespace:DrobnyZivnostnik.Models.MasterPage;assembly=DrobnyZivnostnik"
+             xmlns:travelOrde="clr-namespace:DrobnyZivnostnik.Views.TravelOrder;assembly=DrobnyZivnostnik"
+             xmlns:user="clr-namespace:DrobnyZivnostnik.Views.User;assembly=DrobnyZivnostnik"
+             xmlns:viewModels="clr-namespace:DrobnyZivnostnik.ViewModels;assembly=DrobnyZivnostnik"
+             Title="Master">
 
-  <controls:AxiosContentPage.BindingContext>
+  <ContentPage.BindingContext>
     <viewModels:MasterViewModel />
-  </controls:AxiosContentPage.BindingContext>
+  </ContentPage.BindingContext>
 
-  <StackLayout Orientation="Vertical">
-    <Grid VerticalOptions="FillAndExpand">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="Auto" />
-        <RowDefinition Height="Auto" />
-      </Grid.RowDefinitions>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="20*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
 
-      <localizedControls:AxiosLocalizedLabel Grid.Row="0"
-                                             FontSize="Large"
-                                             HorizontalTextAlignment="Center"
-                                             LabelTextKey="Axios.Views.MainPage.Menu.Title"
-                                             TextColor="White"
-                                             VerticalTextAlignment="Center" />
+    <StackLayout Grid.Row="1" BackgroundColor="WhiteSmoke">
 
       <ListView x:Name="MasterListView"
-                Grid.Row="1"
                 RowHeight="100"
                 SeparatorVisibility="Default">
         <ListView.ItemsSource>
@@ -58,9 +51,7 @@
           <DataTemplate>
             <ViewCell>
               <StackLayout Padding="10">
-                <StackLayout Padding="10"
-                             BackgroundColor="DimGray"
-                             Opacity="0.8">
+                <StackLayout Padding="10">
                   <Grid>
                     <Grid.ColumnDefinitions>
                       <ColumnDefinition Width="1*" />
@@ -77,6 +68,7 @@
                                                            HorizontalOptions="CenterAndExpand"
                                                            HorizontalTextAlignment="Center"
                                                            LabelTextKey="{Binding Title}"
+                                                           Style="{StaticResource Key=HeaderTextStyle}"
                                                            VerticalOptions="CenterAndExpand"
                                                            VerticalTextAlignment="Center" />
                   </Grid>
@@ -86,6 +78,8 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
-    </Grid>
-  </StackLayout>
-</controls:AxiosContentPage>
+    </StackLayout>
+
+  </Grid>
+
+</ContentPage>

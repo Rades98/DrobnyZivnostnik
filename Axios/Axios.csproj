@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Description>Init package for Axios framework extensions</Description>
+    <RepositoryUrl>https://github.com/Rades98/DrobnyZivnostnik</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

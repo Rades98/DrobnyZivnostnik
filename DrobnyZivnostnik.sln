@@ -29,6 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axios", "Axios\Axios.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{15D46A6D-9536-46C9-83E4-647D573F2CFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeployScript", "DeployScript", "{89C10DDC-ED9A-425A-A5E6-5363F15A926B}"
+	ProjectSection(SolutionItems) = preProject
+		NugetPublish.bat = NugetPublish.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +92,7 @@ Global
 		{8105E564-AC86-4516-8880-3BA8F4173C7C} = {80957CC9-8D89-4946-BBB1-FEDE6A4FD063}
 		{80411C5E-8DB6-4A75-B12E-5CBE67819458} = {80957CC9-8D89-4946-BBB1-FEDE6A4FD063}
 		{15D46A6D-9536-46C9-83E4-647D573F2CFE} = {3D3A4FCB-5518-433B-8984-40F929F6B6F7}
+		{89C10DDC-ED9A-425A-A5E6-5363F15A926B} = {80957CC9-8D89-4946-BBB1-FEDE6A4FD063}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B69B5952-4672-41D0-92DC-FF90651BF92D}

@@ -559,6 +559,7 @@ C:\Users\radek.reznicek\Desktop\kody\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZiv
 C:\Users\radek.reznicek\Desktop\kody\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\invoice.png
 C:\Users\radek.reznicek\Desktop\kody\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\travelorder.png
 C:\Users\radek.reznicek\Desktop\kody\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\res\drawable\users.png
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\bin\packaged_resources
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\bin\Debug\DrobnyZivnostnik.Android.dll
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\bin\Debug\DrobnyZivnostnik.Android.pdb
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\bin\Debug\com.companyname.drobnyzivnostnik.apk
@@ -1142,7 +1143,6 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\src\mono\android\support\v7\widget\ViewStubCompat_OnInflateListenerImplementor.java
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
-C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\bin\packaged_resources
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\src\com\companyname\drobnyzivnostnik\R.java
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\compressed_assemblies.arm64-v8a.s
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik.Android\obj\Debug\90\android\compressed_assemblies.armeabi-v7a.s

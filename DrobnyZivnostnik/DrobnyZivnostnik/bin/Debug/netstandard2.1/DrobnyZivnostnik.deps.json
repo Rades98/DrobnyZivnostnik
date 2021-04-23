@@ -11,10 +11,10 @@
         "dependencies": {
           "Application": "1.0.0",
           "AutoMapper": "10.1.1",
-          "Axios": "1.0.0",
-          "AxiosAnnotations": "1.0.0",
-          "AxiosControls": "1.0.0",
-          "AxiosServices": "1.0.0",
+          "Axios": "0.0.1",
+          "AxiosAnnotations": "0.0.1",
+          "AxiosControls": "0.0.1",
+          "AxiosServices": "0.0.1",
           "Behaviors.Forms": "1.4.0",
           "Microsoft.EntityFrameworkCore": "5.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.3",
@@ -1428,8 +1428,8 @@
           "AutoMapper": "10.1.1",
           "AutoMapper.Collection": "7.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "Axios": "1.0.0",
-          "AxiosAnnotations": "1.0.0",
+          "Axios": "0.0.1",
+          "AxiosAnnotations": "0.0.1",
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
@@ -1439,12 +1439,12 @@
           "Application.dll": {}
         }
       },
-      "Axios/1.0.0": {
+      "Axios/0.0.1": {
         "runtime": {
           "Axios.dll": {}
         }
       },
-      "AxiosAnnotations/1.0.0": {
+      "AxiosAnnotations/0.0.1": {
         "dependencies": {
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -1452,10 +1452,10 @@
           "AxiosAnnotations.dll": {}
         }
       },
-      "AxiosControls/1.0.0": {
+      "AxiosControls/0.0.1": {
         "dependencies": {
-          "Axios": "1.0.0",
-          "AxiosServices": "1.0.0",
+          "Axios": "0.0.1",
+          "AxiosServices": "0.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451"
         },
@@ -1463,9 +1463,9 @@
           "AxiosControls.dll": {}
         }
       },
-      "AxiosServices/1.0.0": {
+      "AxiosServices/0.0.1": {
         "dependencies": {
-          "AxiosAnnotations": "1.0.0",
+          "AxiosAnnotations": "0.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0",
           "Xamarin.Essentials": "1.5.3.2",
@@ -2408,22 +2408,22 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Axios/1.0.0": {
+    "Axios/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "AxiosAnnotations/1.0.0": {
+    "AxiosAnnotations/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "AxiosControls/1.0.0": {
+    "AxiosControls/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "AxiosServices/1.0.0": {
+    "AxiosServices/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

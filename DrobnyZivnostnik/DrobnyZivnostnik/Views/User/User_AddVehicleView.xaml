@@ -20,7 +20,7 @@
 
         </controls:AxiosGrid.RowDefinitions>
 
-        <controls:AxiosStackLayout Padding="10" controls:AxiosGrid.Row="0">
+        <StackLayout Padding="10" controls:AxiosGrid.Row="0">
 
           <controls:AxiosTextEdit LabelSource="Name"
                                   LabelSourceType="{x:Type vehicle:VehicleModel}"
@@ -42,7 +42,7 @@
                                   LabelSourceType="{x:Type vehicle:VehicleModel}"
                                   TextEdit="{Binding Model.FuelConsumption}" />
 
-        </controls:AxiosStackLayout>
+        </StackLayout>
 
 
 

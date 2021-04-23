@@ -19,7 +19,7 @@
     </Setter>
   </Style>
 
-  <!--  AxiosLOcalizedLabel  -->
+  <!--  AxiosLLcalizedLabel  -->
   <Style ApplyToDerivedTypes="True" TargetType="localizedControls:AxiosLocalizedLabel">
     <Setter Property="TextColor" Value="Black" />
   </Style>

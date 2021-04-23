@@ -2043,8 +2043,8 @@
           "AutoMapper": "10.1.1",
           "AutoMapper.Collection": "7.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "Axios": "1.0.0",
-          "AxiosAnnotations": "1.0.0",
+          "Axios": "0.0.1",
+          "AxiosAnnotations": "0.0.1",
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
@@ -2057,7 +2057,7 @@
           "bin/placeholder/Application.dll": {}
         }
       },
-      "Axios/1.0.0": {
+      "Axios/0.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "compile": {
@@ -2067,7 +2067,7 @@
           "bin/placeholder/Axios.dll": {}
         }
       },
-      "AxiosAnnotations/1.0.0": {
+      "AxiosAnnotations/0.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -2080,12 +2080,12 @@
           "bin/placeholder/AxiosAnnotations.dll": {}
         }
       },
-      "AxiosControls/1.0.0": {
+      "AxiosControls/0.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Axios": "1.0.0",
-          "AxiosServices": "1.0.0",
+          "Axios": "0.0.1",
+          "AxiosServices": "0.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451"
         },
@@ -2096,11 +2096,11 @@
           "bin/placeholder/AxiosControls.dll": {}
         }
       },
-      "AxiosServices/1.0.0": {
+      "AxiosServices/0.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "AxiosAnnotations": "1.0.0",
+          "AxiosAnnotations": "0.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0",
           "Xamarin.Essentials": "1.5.3.2",
@@ -2132,10 +2132,10 @@
         "dependencies": {
           "Application": "1.0.0",
           "AutoMapper": "10.1.1",
-          "Axios": "1.0.0",
-          "AxiosAnnotations": "1.0.0",
-          "AxiosControls": "1.0.0",
-          "AxiosServices": "1.0.0",
+          "Axios": "0.0.1",
+          "AxiosAnnotations": "0.0.1",
+          "AxiosControls": "0.0.1",
+          "AxiosServices": "0.0.1",
           "Behaviors.Forms": "1.4.0",
           "Microsoft.EntityFrameworkCore": "5.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.3",
@@ -7279,22 +7279,22 @@
       "path": "../../Application/Application.csproj",
       "msbuildProject": "../../Application/Application.csproj"
     },
-    "Axios/1.0.0": {
+    "Axios/0.0.1": {
       "type": "project",
       "path": "../../Axios/Axios.csproj",
       "msbuildProject": "../../Axios/Axios.csproj"
     },
-    "AxiosAnnotations/1.0.0": {
+    "AxiosAnnotations/0.0.1": {
       "type": "project",
       "path": "../../AxiosAnnotations/AxiosAnnotations.csproj",
       "msbuildProject": "../../AxiosAnnotations/AxiosAnnotations.csproj"
     },
-    "AxiosControls/1.0.0": {
+    "AxiosControls/0.0.1": {
       "type": "project",
       "path": "../../AxiosControls/AxiosControls.csproj",
       "msbuildProject": "../../AxiosControls/AxiosControls.csproj"
     },
-    "AxiosServices/1.0.0": {
+    "AxiosServices/0.0.1": {
       "type": "project",
       "path": "../../AxiosServices/AxiosServices.csproj",
       "msbuildProject": "../../AxiosServices/AxiosServices.csproj"
