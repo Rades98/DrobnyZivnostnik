@@ -2,11 +2,11 @@
 {
     using System.Collections.ObjectModel;
     using System.Linq;
-    using Models.Vehicle;
-    using Services.Interfaces;
     using System.Windows.Input;
     using Xamarin.Forms;
     using System.Threading.Tasks;
+    using Application.Models.Vehicle;
+    using Application.Services.Interfaces;
     using Common;
 
     public class UserDetailAddVehicle : CommonDetailViewModel<VehicleModel>

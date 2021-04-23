@@ -1,6 +1,6 @@
 ﻿namespace DrobnyZivnostnik.Views
 {
-    using Controls;
+    using AxiosControls.Controls;
 
     public partial class MasterMenuView : AxiosContentPage
     {

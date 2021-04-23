@@ -3,11 +3,11 @@
     using System.Collections.ObjectModel;
     using System.Threading.Tasks;
     using System.Windows.Input;
+    using Application.Models.Address;
+    using Application.Models.User;
+    using Application.Models.Vehicle;
+    using Application.Services.Interfaces;
     using Common;
-    using Models.Address;
-    using Models.User;
-    using Models.Vehicle;
-    using Services.Interfaces;
     using Views.User;
     using Xamarin.Forms;
 

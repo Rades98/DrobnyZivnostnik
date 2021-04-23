@@ -1,14 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application x:Class="DrobnyZivnostnik.App"
+﻿<Application x:Class="DrobnyZivnostnik.App"
              xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
   <Application.Resources>
+
+    <!--  DO NOT USE ALPHABETICAL ORDER HERE!!!! EVERYTHING WHAT IS NEW JUST ADD UNDER LAST RESOURCE!!!!!!!!!!!!!!!!!!  -->
 
     <ResourceDictionary>
       <ResourceDictionary Source="Resources/LocalizationResource.xaml" />
-      <ResourceDictionary Source="Resources/ApplicationStyles.xaml" />
+      <ResourceDictionary Source="Resources/AxiosComponentsStyles.xaml" />
+      <ResourceDictionary Source="Resources/ComponentsStyles.xaml" />
     </ResourceDictionary>
 
   </Application.Resources>
 </Application>
+

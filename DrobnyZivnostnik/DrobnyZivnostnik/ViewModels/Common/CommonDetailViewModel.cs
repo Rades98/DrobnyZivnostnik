@@ -60,11 +60,11 @@
                 var errMsg = ValidationResults.First().ErrorMessage;
                 var errProp = LocalizationService.GetLocalizationKeyFromPropertyInfo(prop);
 
-
                 Errors.Add(new ValidationResult(errMsg, new List<string>() { errProp}));
 
                 ValidationResults.Clear();
             });
+
 
             return Errors.Count == 0;
         }

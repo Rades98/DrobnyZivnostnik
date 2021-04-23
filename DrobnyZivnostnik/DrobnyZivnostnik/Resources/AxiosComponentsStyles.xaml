@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                    xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls">
+
+  <!--  AxiosContentPage  -->
+  <Style ApplyToDerivedTypes="True" TargetType="controls:AxiosContentPage">
+    <Setter Property="BackgroundImageSource" Value="MainBackground.png" />
+  </Style>
+
+  <!--  AxiosGrid  -->
+  <Style ApplyToDerivedTypes="True" TargetType="controls:AxiosGrid">
+    <Setter Property="AxiosBackgroundView">
+      <Setter.Value>
+        <ContentView BackgroundColor="LightGray"
+                     HorizontalOptions="FillAndExpand"
+                     Opacity="0.7"
+                     VerticalOptions="FillAndExpand" />
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <!--  AxiosLOcalizedLabel  -->
+  <Style ApplyToDerivedTypes="True" TargetType="localizedControls:AxiosLocalizedLabel">
+    <Setter Property="TextColor" Value="Black" />
+  </Style>
+
+
+</ResourceDictionary>

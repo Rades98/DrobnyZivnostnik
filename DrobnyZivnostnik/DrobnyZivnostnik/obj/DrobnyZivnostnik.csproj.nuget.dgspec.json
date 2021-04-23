@@ -4,6 +4,476 @@
     "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj": {}
   },
   "projects": {
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Collection": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj",
+        "projectName": "AxiosAnnotations",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosControls\\AxiosControls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosControls\\AxiosControls.csproj",
+        "projectName": "AxiosControls",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosControls\\AxiosControls.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosControls\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj",
+        "projectName": "AxiosServices",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj",
+        "projectName": "Axios",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik\\DrobnyZivnostnik.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -37,7 +507,23 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Application\\Application.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosAnnotations\\AxiosAnnotations.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosControls\\AxiosControls.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosControls\\AxiosControls.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\AxiosServices\\AxiosServices.csproj"
+              },
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Axios\\Axios.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -85,6 +571,80 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\radek.reznicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\radek.reznicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\radek.reznicek\\Documents\\localNuggets": {},
+          "http://ejpsrvtfs01:8210/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\radek.reznicek\\Documents\\GitHub\\DrobnyZivnostnik\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.3, )"
             }
           },
           "imports": [

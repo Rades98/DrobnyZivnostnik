@@ -1,8 +1,6 @@
 ﻿namespace DrobnyZivnostnik.Views.User
 {
-    using Controls;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
+    using AxiosControls.Controls;
 
     public partial class UserSettingsView : AxiosContentPage
     {

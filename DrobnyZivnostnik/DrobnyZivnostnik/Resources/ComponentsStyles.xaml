@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                    xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls">
+
+  <!--  Entry  -->
+  <Style ApplyToDerivedTypes="True" TargetType="Entry">
+    <Setter Property="TextColor" Value="Black" />
+  </Style>
+
+</ResourceDictionary>

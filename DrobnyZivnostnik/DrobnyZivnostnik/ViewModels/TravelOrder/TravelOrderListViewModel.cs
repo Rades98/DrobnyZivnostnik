@@ -1,11 +1,10 @@
 ﻿namespace DrobnyZivnostnik.ViewModels.TravelOrder
 {
-    using System;
     using System.Collections.ObjectModel;
     using System.Threading.Tasks;
+    using Application.Models.TravelOrder;
+    using Application.Services.Interfaces;
     using Common;
-    using Models.TravelOrder;
-    using Services.Interfaces;
     using Xamarin.Forms;
 
     class TravelOrderListViewModel : CommonListViewModel<TravelOrderFrontModel>

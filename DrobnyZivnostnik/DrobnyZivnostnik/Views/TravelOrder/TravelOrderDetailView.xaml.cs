@@ -1,6 +1,6 @@
 ﻿namespace DrobnyZivnostnik.Views.TravelOrder
 {
-    using Controls;
+    using AxiosControls.Controls;
 
     public partial class TravelOrderDetailView : AxiosContentPage
     {

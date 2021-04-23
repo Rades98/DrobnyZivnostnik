@@ -14,7 +14,7 @@ namespace DrobnyZivnostnik.Views.User {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\User\\UserSettingsView.xaml")]
-    public partial class UserSettingsView : global::DrobnyZivnostnik.Controls.AxiosContentPage {
+    public partial class UserSettingsView : global::AxiosControls.Controls.AxiosContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
