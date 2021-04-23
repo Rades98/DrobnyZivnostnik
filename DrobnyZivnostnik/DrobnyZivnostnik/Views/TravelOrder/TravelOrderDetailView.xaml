@@ -2,15 +2,16 @@
 <controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.TravelOrder.TravelOrderDetailView"
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
                            xmlns:travelOrder="clr-namespace:DrobnyZivnostnik.ViewModels.TravelOrder;assembly=DrobnyZivnostnik"
-                           xmlns:travelOrderType="clr-namespace:DrobnyZivnostnik.Models.TravelOrder;assembly=DrobnyZivnostnik">
+                           xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                           xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
+                           xmlns:travelOrderType="clr-namespace:Application.Models.TravelOrder;assembly=Application">
   <controls:AxiosContentPage.BindingContext>
     <travelOrder:TravelOrderListViewModel />
   </controls:AxiosContentPage.BindingContext>
 
   <NavigationPage.TitleView>
-    <controls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.TravelOrder" />
+    <localizedControls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.TravelOrder" />
   </NavigationPage.TitleView>
 
   <controls:AxiosContentPage.Content>
@@ -18,7 +19,7 @@
       <CollectionView ItemsSource="{Binding Models}" SelectionMode="None">
         <CollectionView.Header>
           <Grid>
-            <controls:AxiosLocalizedLabel FontAttributes="Italic"
+            <localizedControls:AxiosLocalizedLabel FontAttributes="Italic"
                                           FontSize="Large"
                                           HorizontalOptions="Start"
                                           LabelTextKey="Axios.Views.MainPage.Menu.Items.TravelOrder"
@@ -51,7 +52,7 @@
                             <Image Source="Checked.png" />
                           </StackLayout>
 
-                          <controls:AxiosLocalizedLabel Grid.Column="1"
+                          <localizedControls:AxiosLocalizedLabel Grid.Column="1"
                                                         FontAttributes="Bold"
                                                         FontSize="Body"
                                                         LabelTextKey="Axios.Views.TravelOrder.EndTravelOrder"
@@ -72,7 +73,7 @@
                                VerticalOptions="FillAndExpand" />
 
                   <StackLayout Orientation="Horizontal">
-                    <controls:AxiosLocalizedLabel FontAttributes="Bold"
+                    <localizedControls:AxiosLocalizedLabel FontAttributes="Bold"
                                                   LabelSource="StartDate"
                                                   LabelSourceType="{x:Type travelOrderType:TravelOrderFrontModel}"
                                                   TextColor="Black" />
@@ -82,7 +83,7 @@
                   </StackLayout>
 
                   <StackLayout Orientation="Horizontal">
-                    <controls:AxiosLocalizedLabel FontAttributes="Bold"
+                    <localizedControls:AxiosLocalizedLabel FontAttributes="Bold"
                                                   LabelSource="StartPlace"
                                                   LabelSourceType="{x:Type travelOrderType:TravelOrderFrontModel}"
                                                   TextColor="Black" />
@@ -92,7 +93,7 @@
                   </StackLayout>
 
                   <StackLayout Orientation="Horizontal">
-                    <controls:AxiosLocalizedLabel FontAttributes="Bold"
+                    <localizedControls:AxiosLocalizedLabel FontAttributes="Bold"
                                                   LabelSource="EndPlace"
                                                   LabelSourceType="{x:Type travelOrderType:TravelOrderFrontModel}"
                                                   TextColor="Black" />

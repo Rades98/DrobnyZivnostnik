@@ -2,35 +2,32 @@
 <controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.MainDetailView"
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
-                           xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
+                           xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                           xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
                            BackgroundColor="Transparent">
   <NavigationPage.TitleView>
-    <controls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="" />
+    <localizedControls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="" />
   </NavigationPage.TitleView>
 
   <controls:AxiosContentPage.Content>
     <StackLayout>
 
-      <Grid Padding="40"
-            HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand">
-        <ContentView BackgroundColor="LightGray"
-                     Opacity="0.7"
-                     VerticalOptions="FillAndExpand" />
+      <controls:AxiosGrid Padding="40"
+                          HorizontalOptions="CenterAndExpand"
+                          VerticalOptions="CenterAndExpand">
         <StackLayout>
-          <controls:AxiosLocalizedLabel FontSize="Large"
-                                        HorizontalOptions="CenterAndExpand"
-                                        LabelTextKey="Axios.Views.MainPage.Detail.Title"
-                                        TextColor="Black"
-                                        VerticalOptions="CenterAndExpand" />
-          <controls:AxiosLocalizedLabel Padding="20"
-                                        HorizontalOptions="StartAndExpand"
-                                        LabelTextKey="Axios.Views.MainPage.Detail.Info"
-                                        TextColor="Black"
-                                        VerticalOptions="StartAndExpand" />
+          <localizedControls:AxiosLocalizedLabel FontSize="Large"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 LabelTextKey="Axios.Views.MainPage.Detail.Title"
+                                                 TextColor="Black"
+                                                 VerticalOptions="CenterAndExpand" />
+          <localizedControls:AxiosLocalizedLabel Padding="20"
+                                                 HorizontalOptions="StartAndExpand"
+                                                 LabelTextKey="Axios.Views.MainPage.Detail.Info"
+                                                 TextColor="Black"
+                                                 VerticalOptions="StartAndExpand" />
         </StackLayout>
-      </Grid>
+      </controls:AxiosGrid>
 
       <Grid Padding="20" HeightRequest="50">
         <ContentView BackgroundColor="LightGray"

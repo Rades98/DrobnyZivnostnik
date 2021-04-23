@@ -3,8 +3,8 @@
     using System;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
-    using Controls;
-    using Services.Interfaces;
+    using AxiosControls.Controls;
+    using AxiosServices.Services.Interfaces;
     using Xamarin.Forms;
 
     public class BaseViewModel : INotifyPropertyChanged

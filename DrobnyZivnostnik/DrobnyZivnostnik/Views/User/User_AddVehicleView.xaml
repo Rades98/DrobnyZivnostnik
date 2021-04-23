@@ -2,109 +2,66 @@
 <controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.User.User_AddVehicleView"
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           xmlns:controls="clr-namespace:DrobnyZivnostnik.Controls;assembly=DrobnyZivnostnik"
-                           xmlns:extensions="clr-namespace:DrobnyZivnostnik.Extensions;assembly=DrobnyZivnostnik"
+                           xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                           xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
                            xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
-                           xmlns:vehicle="clr-namespace:DrobnyZivnostnik.Models.Vehicle;assembly=DrobnyZivnostnik">
+                           xmlns:vehicle="clr-namespace:Application.Models.Vehicle;assembly=Application">
   <controls:AxiosContentPage.BindingContext>
     <user:UserDetailAddVehicle />
   </controls:AxiosContentPage.BindingContext>
   <controls:AxiosContentPage.Content>
-    <StackLayout Padding="10">
-      <Grid BackgroundColor="SlateGray" Opacity="0.7">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="*" />
-          <RowDefinition Height="*" />
-          <RowDefinition Height="*" />
-          <RowDefinition Height="*" />
-          <RowDefinition Height="*" />
-          <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <StackLayout>
+      <controls:AxiosGrid Padding="20"
+                          HorizontalOptions="CenterAndExpand"
+                          VerticalOptions="CenterAndExpand">
+        <controls:AxiosGrid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+
+        </controls:AxiosGrid.RowDefinitions>
+
+        <controls:AxiosStackLayout Padding="10" controls:AxiosGrid.Row="0">
+
+          <controls:AxiosTextEdit LabelSource="Name"
+                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                  TextEdit="{Binding Model.Name}" />
+
+          <controls:AxiosTextEdit LabelSource="NumberPlate"
+                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                  TextEdit="{Binding Model.NumberPlate}" />
+
+          <controls:AxiosTextEdit LabelSource="VehicleType"
+                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                  TextEdit="{Binding Model.VehicleType}" />
+
+          <controls:AxiosTextEdit LabelSource="FuelType"
+                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                  TextEdit="{Binding Model.FuelType}" />
+
+          <controls:AxiosTextEdit LabelSource="FuelConsumption"
+                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                  TextEdit="{Binding Model.FuelConsumption}" />
+
+        </controls:AxiosStackLayout>
 
 
-        <StackLayout Grid.Row="0"
-                     Padding="20,0,20,0"
-                     Orientation="Horizontal">
-          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:AxiosLocalizedLabel FontSize="Body"
-                                          LabelSource="Name"
-                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
-          </StackLayout>
-          <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model.Name}" />
-          </StackLayout>
-        </StackLayout>
 
-        <StackLayout Grid.Row="1"
-                     Padding="20,0,20,0"
-                     Orientation="Horizontal">
-          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:AxiosLocalizedLabel FontSize="Body"
-                                          LabelSource="NumberPlate"
-                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
-          </StackLayout>
-          <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model.NumberPlate}" />
-          </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="2"
-                     Padding="20,0,20,0"
-                     Orientation="Horizontal">
-          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:AxiosLocalizedLabel FontSize="Body"
-                                          LabelSource="VehicleType"
-                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
-          </StackLayout>
-          <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Model.VehicleType}" />
-          </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="3"
-                     Padding="20,0,20,0"
-                     Orientation="Horizontal">
-          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:AxiosLocalizedLabel FontSize="Body"
-                                          LabelSource="FuelType"
-                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
-          </StackLayout>
-          <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <controls:AxiosLocalizedPicker ItemsSource="{Binding FuelType}" SelectedItem="{Binding Model.FuelType, Mode=TwoWay}" />
-          </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="4"
-                     Padding="20,0,20,0"
-                     Orientation="Horizontal">
-          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <controls:AxiosLocalizedLabel FontSize="Body"
-                                          LabelSource="FuelConsumption"
-                                          LabelSourceType="{x:Type vehicle:VehicleModel}" />
-          </StackLayout>
-          <StackLayout Padding="0,0,40,0" HorizontalOptions="FillAndExpand">
-            <Entry HorizontalOptions="FillAndExpand"
-                   Keyboard="Numeric"
-                   Text="{Binding Model.FuelConsumption}" />
-          </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="5">
+        <StackLayout controls:AxiosGrid.Row="1">
           <StackLayout HorizontalOptions="Center"
                        Orientation="Horizontal"
                        VerticalOptions="Center">
             <Image HeightRequest="35" Source="Add.png" />
-            <controls:AxiosLocalizedLabel FontSize="Body"
-                                          HorizontalOptions="Center"
-                                          LabelTextKey="Axios.Views.Common.Save"
-                                          VerticalOptions="Center" />
+            <localizedControls:AxiosLocalizedLabel FontSize="Medium"
+                                                   HorizontalOptions="Center"
+                                                   LabelTextKey="Axios.Views.Common.Save"
+                                                   TextColor="Black"
+                                                   VerticalOptions="Center" />
             <StackLayout.GestureRecognizers>
               <TapGestureRecognizer Command="{Binding SaveCommand}" NumberOfTapsRequired="1" />
             </StackLayout.GestureRecognizers>
           </StackLayout>
         </StackLayout>
-
-      </Grid>
+      </controls:AxiosGrid>
     </StackLayout>
   </controls:AxiosContentPage.Content>
 </controls:AxiosContentPage>
