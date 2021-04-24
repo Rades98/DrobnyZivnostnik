@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                    xmlns:editControls="clr-namespace:AxiosControls.Controls.EditControls;assembly=AxiosControls"
                     xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls">
 
   <!--  AxiosContentPage  -->
@@ -22,6 +23,14 @@
   <!--  AxiosLLcalizedLabel  -->
   <Style ApplyToDerivedTypes="True" TargetType="localizedControls:AxiosLocalizedLabel">
     <Setter Property="TextColor" Value="Black" />
+  </Style>
+
+  <!--  Axios edit controls  -->
+  <Style ApplyToDerivedTypes="True" TargetType="editControls:AxiosBaseEditControl">
+    <Setter Property="FontColor" Value="Black" />
+    <Setter Property="FontSize" Value="20" />
+    <Setter Property="ErrorFontSize" Value="10" />
+    <Setter Property="ErrorFontColor" Value="LightCoral" />
   </Style>
 
 

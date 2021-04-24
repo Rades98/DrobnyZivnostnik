@@ -1,7 +1,6 @@
 ﻿namespace DrobnyZivnostnik.ViewModels.User
 {
     using System.Collections.ObjectModel;
-    using System.Linq;
     using System.Windows.Input;
     using Xamarin.Forms;
     using System.Threading.Tasks;
@@ -15,9 +14,11 @@
 
         public ICommand SaveCommand { get; set; }
 
-        public ObservableCollection<string> FuelType => new ObservableCollection<string>()
+        public ObservableCollection<string> FuelTypes => new ObservableCollection<string>()
         {
+            LocalizationService.GetResourceByKey("Axios.Values.FuelType.CNG"),
             LocalizationService.GetResourceByKey("Axios.Values.FuelType.Diesel"),
+            LocalizationService.GetResourceByKey("Axios.Values.FuelType.LPG"),
             LocalizationService.GetResourceByKey("Axios.Values.FuelType.Petrol")
         };
 
@@ -34,11 +35,6 @@
             {
                 await _vehicleService.AddAsync(Model);
                 BackFromActualPage();
-            }
-            else
-            {
-                await MessageService.ShowErrorsAsync(Errors);
-                Errors.Clear();
             }
         }
     }

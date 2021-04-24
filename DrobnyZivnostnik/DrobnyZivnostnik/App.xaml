@@ -10,6 +10,7 @@
       <ResourceDictionary Source="Resources/AxiosComponentsStyles.xaml" />
       <ResourceDictionary Source="Resources/ComponentsStyles.xaml" />
       <ResourceDictionary Source="Resources/FontStyles.xaml" />
+      <ResourceDictionary Source="Resources/Converters.xaml" />
     </ResourceDictionary>
 
   </Application.Resources>

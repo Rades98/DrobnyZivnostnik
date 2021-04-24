@@ -3,6 +3,7 @@
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
+                           xmlns:editControls="clr-namespace:AxiosControls.Controls.EditControls;assembly=AxiosControls"
                            xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
                            xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
                            xmlns:vehicle="clr-namespace:Application.Models.Vehicle;assembly=Application">
@@ -22,29 +23,34 @@
 
         <StackLayout Padding="10" controls:AxiosGrid.Row="0">
 
-          <controls:AxiosTextEdit LabelSource="Name"
-                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
-                                  TextEdit="{Binding Model.Name}" />
+          <editControls:AxiosTextEdit ErrorMessage="{Binding Path=ErrorMessages.[Name]}"
+                                      LabelSource="Name"
+                                      LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                      TextEdit="{Binding Model.Name}" />
 
-          <controls:AxiosTextEdit LabelSource="NumberPlate"
-                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
-                                  TextEdit="{Binding Model.NumberPlate}" />
+          <editControls:AxiosTextEdit ErrorMessage="{Binding Path=ErrorMessages.[NumberPlate]}"
+                                      LabelSource="NumberPlate"
+                                      LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                      TextEdit="{Binding Model.NumberPlate}" />
 
-          <controls:AxiosTextEdit LabelSource="VehicleType"
-                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
-                                  TextEdit="{Binding Model.VehicleType}" />
+          <editControls:AxiosTextEdit ErrorMessage="{Binding Path=ErrorMessages.[VehicleType]}"
+                                      LabelSource="VehicleType"
+                                      LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                      TextEdit="{Binding Model.VehicleType}" />
 
-          <controls:AxiosTextEdit LabelSource="FuelType"
-                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
-                                  TextEdit="{Binding Model.FuelType}" />
+          <editControls:AxiosPickerEdit ErrorMessage="{Binding Path=ErrorMessages.[FuelType]}"
+                                        ItemsSource="{Binding FuelTypes}"
+                                        LabelSource="FuelType"
+                                        LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                        SelectedItem="{Binding Model.FuelType}" />
 
-          <controls:AxiosTextEdit LabelSource="FuelConsumption"
-                                  LabelSourceType="{x:Type vehicle:VehicleModel}"
-                                  TextEdit="{Binding Model.FuelConsumption}" />
+          <editControls:AxiosTextEdit ErrorMessage="{Binding Path=ErrorMessages.[FuelConsumption]}"
+                                      Keyboard="Numeric"
+                                      LabelSource="FuelConsumption"
+                                      LabelSourceType="{x:Type vehicle:VehicleModel}"
+                                      TextEdit="{Binding Model.FuelConsumption}" />
 
         </StackLayout>
-
-
 
         <StackLayout controls:AxiosGrid.Row="1">
           <StackLayout HorizontalOptions="Center"
