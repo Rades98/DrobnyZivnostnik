@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Axios\Axios.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
 </Project>

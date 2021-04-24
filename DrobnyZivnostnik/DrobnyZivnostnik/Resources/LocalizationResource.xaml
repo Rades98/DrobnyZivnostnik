@@ -38,7 +38,9 @@
   <s:String x:Key="Axios.Models.VehicleModel.NumberPlate">SPZ</s:String>
   <s:String x:Key="Axios.Models.VehicleModel.VehicleType">Typ vozidla</s:String>
 
+  <s:String x:Key="Axios.Values.FuelType.CNG">CNG</s:String>
   <s:String x:Key="Axios.Values.FuelType.Diesel">Nafta</s:String>
+  <s:String x:Key="Axios.Values.FuelType.LPG">LPG</s:String>
   <s:String x:Key="Axios.Values.FuelType.Petrol">Benzín</s:String>
   <s:String x:Key="Axios.Views.Common.Add">Přidat</s:String>
   <s:String x:Key="Axios.Views.Common.Delete">Smazat</s:String>

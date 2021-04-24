@@ -1,5 +1,6 @@
 ﻿namespace DrobnyZivnostnik.ViewModels.Common
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
@@ -10,7 +11,7 @@
     {
         private TModel _model;
 
-        public ICollection<ValidationResult> Errors { get; set; } = new List<ValidationResult>();
+        public Dictionary<string, string> ErrorMessages { get; set; } = new Dictionary<string, string>();
 
         public TModel Model
         {
@@ -37,11 +38,13 @@
 
         public virtual Task<TModel> GetDataAsync() => (Task<TModel>)Task.CompletedTask;
 
-        public virtual Task CustomRefresh() => (Task<TModel>)Task.CompletedTask; 
+        public virtual Task CustomRefresh() => (Task<TModel>)Task.CompletedTask;
 
         protected bool ValidateModel()
         {
-            var ValidationResults = new List<ValidationResult>();
+            var validationResults = new List<ValidationResult>();
+
+            ErrorMessages = new Dictionary<string, string>();
 
             Model.GetType().GetProperties().ForEach(prop =>
             {
@@ -50,23 +53,23 @@
                     MemberName = prop.Name
                 };
 
-                var isValid = Validator.TryValidateProperty(prop.GetValue(Model), validationContext, ValidationResults);
+                var isValid = Validator.TryValidateProperty(prop.GetValue(Model), validationContext, validationResults);
 
                 if (isValid)
                 {
+                    ErrorMessages.Add(prop.Name, string.Empty);
                     return;
                 }
 
-                var errMsg = ValidationResults.First().ErrorMessage;
-                var errProp = LocalizationService.GetLocalizationKeyFromPropertyInfo(prop);
+                var errMsg = validationResults.First().ErrorMessage;
+                ErrorMessages.Add(prop.Name, errMsg);
 
-                Errors.Add(new ValidationResult(errMsg, new List<string>() { errProp}));
-
-                ValidationResults.Clear();
+                validationResults.Clear();
             });
 
+            OnPropertyChanged(nameof(ErrorMessages));
 
-            return Errors.Count == 0;
+            return ErrorMessages.Count == 0;
         }
     }
 }

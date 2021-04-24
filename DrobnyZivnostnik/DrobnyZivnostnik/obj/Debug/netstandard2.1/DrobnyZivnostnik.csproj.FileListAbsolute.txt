@@ -37,3 +37,4 @@ C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\Drobn
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.dll
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\ref\DrobnyZivnostnik.dll
 C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\DrobnyZivnostnik.pdb
+C:\Users\radek.reznicek\Documents\GitHub\DrobnyZivnostnik\DrobnyZivnostnik\DrobnyZivnostnik\obj\Debug\netstandard2.1\Resources\Converters.xaml.g.cs
