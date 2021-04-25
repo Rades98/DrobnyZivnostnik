@@ -1,7 +1,13 @@
 ﻿namespace Application
 {
+    using AutoMapper;
     using Database;
+    using Domain.Entities;
     using Microsoft.Extensions.DependencyInjection;
+    using Models.Address;
+    using Models.TravelOrder;
+    using Models.User;
+    using Models.Vehicle;
     using Services;
     using Services.Interfaces;
     using Xamarin.Forms;
@@ -30,7 +36,20 @@
             DependencyService.Register<IVehicleService, VehicleService>();
             DependencyService.Register<ITravelOrderService, TravelOrderService>();
 
-            DependencyService.RegisterSingleton(new MappingProfiler());
+            DependencyService.RegisterSingleton(new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Address, AddressModel>();
+                cfg.CreateMap<AddressModel, Address>();
+
+                cfg.CreateMap<TravelOrderFront, TravelOrderFrontModel>();
+                cfg.CreateMap<TravelOrderFrontModel, TravelOrderFront>();
+
+                cfg.CreateMap<User, UserModel>();
+                cfg.CreateMap<UserModel, User>();
+
+                cfg.CreateMap<Vehicle, VehicleModel>();
+                cfg.CreateMap<VehicleModel, Vehicle>();
+            }).CreateMapper());
         }
     }
 }
