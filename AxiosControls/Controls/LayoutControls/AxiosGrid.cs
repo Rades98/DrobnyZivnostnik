@@ -1,6 +1,5 @@
-﻿namespace AxiosControls.Controls
+﻿namespace AxiosControls.Controls.LayoutControls
 {
-    using Axios.Extensions;
     using Xamarin.Forms;
 
     public class AxiosGrid : Grid
@@ -12,7 +11,7 @@
 
         private void SetBackground()
         {
-            if (AxiosBackgroundView.IsNotNull())
+            if (!(AxiosBackgroundView is null))
             {
                 Children.Add(AxiosBackgroundView);
             }

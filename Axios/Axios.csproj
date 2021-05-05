@@ -9,4 +9,9 @@
     <RepositoryUrl>https://github.com/Rades98/DrobnyZivnostnik</RepositoryUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AxiosAnnotations\AxiosAnnotations.csproj" />
+    <ProjectReference Include="..\AxiosServices\AxiosServices.csproj" />
+  </ItemGroup>
+
 </Project>

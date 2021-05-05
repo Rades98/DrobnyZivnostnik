@@ -1,95 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.User.UserDetailView"
-                           xmlns="http://xamarin.com/schemas/2014/forms"
-                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
-                           xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
-                           xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
-                           xmlns:userModel="clr-namespace:Application.Models.User;assembly=Application"
-                           xmlns:vehicle="clr-namespace:Application.Models.Vehicle;assembly=Application"
-                           x:Name="UserDetail">
+<layoutControls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.User.UserDetailView"
+                                 xmlns="http://xamarin.com/schemas/2014/forms"
+                                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                                 xmlns:layoutControls="clr-namespace:AxiosControls.Controls.LayoutControls;assembly=AxiosControls"
+                                 xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
+                                 xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
+                                 xmlns:userModel="clr-namespace:Application.Models.User;assembly=Application"
+                                 xmlns:vehicle="clr-namespace:Application.Models.Vehicle;assembly=Application"
+                                 x:Name="UserDetail">
 
   <NavigationPage.TitleView>
     <localizedControls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.Users" />
   </NavigationPage.TitleView>
 
-  <controls:AxiosContentPage.BindingContext>
+  <layoutControls:AxiosContentPage.BindingContext>
     <user:UserDetailViewModel />
-  </controls:AxiosContentPage.BindingContext>
+  </layoutControls:AxiosContentPage.BindingContext>
 
-  <controls:AxiosContentPage.Content>
+  <layoutControls:AxiosContentPage.Content>
     <StackLayout Padding="10" Orientation="Vertical">
+
+
+
 
       <Grid>
         <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
           <RowDefinition Height="Auto" />
           <RowDefinition Height="*" />
           <RowDefinition Height="4*" />
           <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackLayout Grid.Row="0" BackgroundColor="LightGray">
-          <Grid>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="1*" />
-              <ColumnDefinition Width="4*" />
-            </Grid.ColumnDefinitions>
+        <layoutControls:AxiosGrid Grid.Row="0" Padding="10">
 
-            <Grid.RowDefinitions>
-              <RowDefinition Height="*" />
-              <RowDefinition Height="*" />
+          <layoutControls:AxiosExpandableView>
+            <layoutControls:AxiosExpandableView.Summary>
+              <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                  <Image HeightRequest="80" Source="Users.png" />
+                </StackLayout>
 
-            </Grid.RowDefinitions>
+                <StackLayout Orientation="Vertical">
+                  <localizedControls:AxiosLocalizedLabel FontSize="Medium" Text="{Binding Model.FullName}" />
 
-            <StackLayout Grid.Row="0"
-                         Grid.Column="1"
-                         Orientation="Horizontal">
-              <Label FontSize="Medium"
-                     Text="{Binding Model.FullName}"
-                     TextColor="Black" />
-            </StackLayout>
+                  <StackLayout Orientation="Horizontal">
 
-            <StackLayout Grid.Row="1"
-                         Grid.Column="1"
-                         Orientation="Horizontal">
-              <localizedControls:AxiosLocalizedLabel LabelSource="IdentifyingNumber"
-                                                     LabelSourceType="{x:Type userModel:UserModel}"
-                                                     TextColor="Black" />
-              <Label Text="{Binding Model.IdentifyingNumber}" TextColor="Black" />
-            </StackLayout>
+                    <localizedControls:AxiosLocalizedLabel LabelSource="IdentifyingNumber" LabelSourceType="{x:Type userModel:UserModel}" />
+                    <localizedControls:AxiosLocalizedLabel Text="{Binding Model.IdentifyingNumber}" />
 
-            <StackLayout Grid.Row="2"
-                         Grid.Column="1"
-                         Orientation="Horizontal">
-              <localizedControls:AxiosLocalizedLabel LabelSource="CreationDate"
-                                                     LabelSourceType="{x:Type userModel:UserModel}"
-                                                     TextColor="Black" />
-              <Label Text="{Binding Model.CreationDate, StringFormat='{0:dd.MM.yyyy}'}" TextColor="Black" />
-            </StackLayout>
-          </Grid>
-        </StackLayout>
-        <StackLayout Grid.Row="1">
+                  </StackLayout>
 
-          <StackLayout Padding="20,0,20,0"
-                       BackgroundColor="LightGray"
-                       Opacity="0.7"
-                       Orientation="Horizontal">
-            <StackLayout>
-              <Label FontSize="Medium"
-                     Text="{Binding Address.City}"
-                     TextColor="Black" />
-            </StackLayout>
-            <StackLayout Padding="0,0,40,0" Orientation="Horizontal">
-              <Label FontSize="Body"
-                     Text="{Binding Address.Street}"
-                     TextColor="Black" />
-              <Label FontSize="Body"
-                     Text="{Binding Address.HouseNumber}"
-                     TextColor="Black" />
-            </StackLayout>
-          </StackLayout>
-        </StackLayout>
+                  <StackLayout Orientation="Horizontal">
+
+                    <localizedControls:AxiosLocalizedLabel LabelSource="CreationDate" LabelSourceType="{x:Type userModel:UserModel}" />
+                    <localizedControls:AxiosLocalizedLabel Text="{Binding Model.CreationDate, StringFormat='{0:dd.MM.yyyy}'}" />
+
+                  </StackLayout>
+
+                </StackLayout>
+
+              </StackLayout>
+            </layoutControls:AxiosExpandableView.Summary>
+
+            <layoutControls:AxiosExpandableView.Details>
+              <StackLayout Orientation="Vertical">
+
+                <localizedControls:AxiosLocalizedLabel FontSize="Medium" Text="{Binding Address.City}" />
+
+                <StackLayout Orientation="Horizontal">
+
+                  <localizedControls:AxiosLocalizedLabel FontSize="Body" Text="{Binding Address.Street}" />
+                  <localizedControls:AxiosLocalizedLabel FontSize="Body" Text="{Binding Address.HouseNumber}" />
+
+                </StackLayout>
+              </StackLayout>
+            </layoutControls:AxiosExpandableView.Details>
+          </layoutControls:AxiosExpandableView>
+        </layoutControls:AxiosGrid>
+
 
         <StackLayout Grid.Row="3" VerticalOptions="Center">
           <Frame Opacity="0.7" OutlineColor="Black">
@@ -193,5 +182,5 @@
         </StackLayout>
       </Grid>
     </StackLayout>
-  </controls:AxiosContentPage.Content>
-</controls:AxiosContentPage>
+  </layoutControls:AxiosContentPage.Content>
+</layoutControls:AxiosContentPage>

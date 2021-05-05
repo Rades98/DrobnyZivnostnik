@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.TravelOrder.TravelOrderDetailView"
+<layoutControls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.TravelOrder.TravelOrderDetailView"
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:travelOrder="clr-namespace:DrobnyZivnostnik.ViewModels.TravelOrder;assembly=DrobnyZivnostnik"
                            xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
                            xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
-                           xmlns:travelOrderType="clr-namespace:Application.Models.TravelOrder;assembly=Application">
-  <controls:AxiosContentPage.BindingContext>
+                           xmlns:travelOrderType="clr-namespace:Application.Models.TravelOrder;assembly=Application"
+                           xmlns:layoutControls="clr-namespace:AxiosControls.Controls.LayoutControls;assembly=AxiosControls">
+  <layoutControls:AxiosContentPage.BindingContext>
     <travelOrder:TravelOrderListViewModel />
-  </controls:AxiosContentPage.BindingContext>
+  </layoutControls:AxiosContentPage.BindingContext>
 
   <NavigationPage.TitleView>
     <localizedControls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="Axios.Views.MainPage.Menu.Items.TravelOrder" />
   </NavigationPage.TitleView>
 
-  <controls:AxiosContentPage.Content>
+  <layoutControls:AxiosContentPage.Content>
     <StackLayout>
       <CollectionView ItemsSource="{Binding Models}" SelectionMode="None">
         <CollectionView.Header>
@@ -108,5 +109,5 @@
         </CollectionView.ItemTemplate>
       </CollectionView>
     </StackLayout>
-  </controls:AxiosContentPage.Content>
-</controls:AxiosContentPage>
+  </layoutControls:AxiosContentPage.Content>
+</layoutControls:AxiosContentPage>

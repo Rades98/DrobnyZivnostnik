@@ -2,14 +2,13 @@
 {
     using System;
     using System.Globalization;
-    using Axios.Extensions;
     using Xamarin.Forms;
 
     public class HasDataBoolConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value.IsNotNull();
+            return !(value is null);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

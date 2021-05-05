@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.MainDetailView"
+<layoutControls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.MainDetailView"
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
                            xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
+                           xmlns:layoutControls="clr-namespace:AxiosControls.Controls.LayoutControls;assembly=AxiosControls"
                            BackgroundColor="Transparent">
   <NavigationPage.TitleView>
     <localizedControls:AxiosLocalizedLabel FontSize="Large" LabelTextKey="" />
   </NavigationPage.TitleView>
 
-  <controls:AxiosContentPage.Content>
+  <layoutControls:AxiosContentPage.Content>
     <StackLayout>
 
-      <controls:AxiosGrid Padding="20"
+      <layoutControls:AxiosGrid Padding="20"
                           HorizontalOptions="CenterAndExpand"
                           VerticalOptions="CenterAndExpand">
         <StackLayout>
@@ -25,7 +26,7 @@
                                                  LabelTextKey="Axios.Views.MainPage.Detail.Info"
                                                  VerticalOptions="StartAndExpand" />
         </StackLayout>
-      </controls:AxiosGrid>
+      </layoutControls:AxiosGrid>
 
 
       <StackLayout Padding="20,0,20,0">
@@ -37,5 +38,5 @@
       </StackLayout>
 
     </StackLayout>
-  </controls:AxiosContentPage.Content>
-</controls:AxiosContentPage>
+  </layoutControls:AxiosContentPage.Content>
+</layoutControls:AxiosContentPage>

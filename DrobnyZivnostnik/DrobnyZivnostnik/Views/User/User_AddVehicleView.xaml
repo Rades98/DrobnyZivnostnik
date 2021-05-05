@@ -1,27 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<controls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.User.User_AddVehicleView"
+<layoutControls:AxiosContentPage x:Class="DrobnyZivnostnik.Views.User.User_AddVehicleView"
                            xmlns="http://xamarin.com/schemas/2014/forms"
                            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                            xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
                            xmlns:editControls="clr-namespace:AxiosControls.Controls.EditControls;assembly=AxiosControls"
                            xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
                            xmlns:user="clr-namespace:DrobnyZivnostnik.ViewModels.User;assembly=DrobnyZivnostnik"
-                           xmlns:vehicle="clr-namespace:Application.Models.Vehicle;assembly=Application">
-  <controls:AxiosContentPage.BindingContext>
+                           xmlns:vehicle="clr-namespace:Application.Models.Vehicle;assembly=Application"
+                           xmlns:layoutControls="clr-namespace:AxiosControls.Controls.LayoutControls;assembly=AxiosControls">
+  <layoutControls:AxiosContentPage.BindingContext>
     <user:UserDetailAddVehicle />
-  </controls:AxiosContentPage.BindingContext>
-  <controls:AxiosContentPage.Content>
+  </layoutControls:AxiosContentPage.BindingContext>
+  <layoutControls:AxiosContentPage.Content>
     <StackLayout>
-      <controls:AxiosGrid Padding="20"
+      <layoutControls:AxiosGrid Padding="20"
                           HorizontalOptions="CenterAndExpand"
                           VerticalOptions="CenterAndExpand">
-        <controls:AxiosGrid.RowDefinitions>
+        <layoutControls:AxiosGrid.RowDefinitions>
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
 
-        </controls:AxiosGrid.RowDefinitions>
+        </layoutControls:AxiosGrid.RowDefinitions>
 
-        <StackLayout Padding="10" controls:AxiosGrid.Row="0">
+        <StackLayout Padding="10" layoutControls:AxiosGrid.Row="0">
 
           <editControls:AxiosTextEdit ErrorMessage="{Binding Path=ErrorMessages.[Name]}"
                                       LabelSource="Name"
@@ -52,7 +53,7 @@
 
         </StackLayout>
 
-        <StackLayout controls:AxiosGrid.Row="1">
+        <StackLayout layoutControls:AxiosGrid.Row="1">
           <StackLayout HorizontalOptions="Center"
                        Orientation="Horizontal"
                        VerticalOptions="Center">
@@ -67,7 +68,7 @@
             </StackLayout.GestureRecognizers>
           </StackLayout>
         </StackLayout>
-      </controls:AxiosGrid>
+      </layoutControls:AxiosGrid>
     </StackLayout>
-  </controls:AxiosContentPage.Content>
-</controls:AxiosContentPage>
+  </layoutControls:AxiosContentPage.Content>
+</layoutControls:AxiosContentPage>

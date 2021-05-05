@@ -1,4 +1,4 @@
-﻿namespace AxiosControls.Controls
+﻿namespace AxiosControls.Controls.LayoutControls
 {
     using Xamarin.Forms;
 

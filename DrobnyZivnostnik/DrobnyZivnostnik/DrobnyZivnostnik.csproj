@@ -25,9 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\Application.csproj" />
-    <ProjectReference Include="..\..\AxiosAnnotations\AxiosAnnotations.csproj" />
     <ProjectReference Include="..\..\AxiosControls\AxiosControls.csproj" />
-    <ProjectReference Include="..\..\AxiosServices\AxiosServices.csproj" />
     <ProjectReference Include="..\..\Axios\Axios.csproj" />
   </ItemGroup>
 

@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AxiosServices\AxiosServices.csproj" />
-    <ProjectReference Include="..\Axios\Axios.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,15 +1,15 @@
 ﻿<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
-                    xmlns:controls="clr-namespace:AxiosControls.Controls;assembly=AxiosControls"
                     xmlns:editControls="clr-namespace:AxiosControls.Controls.EditControls;assembly=AxiosControls"
-                    xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls">
+                    xmlns:localizedControls="clr-namespace:AxiosControls.LocalizedControls;assembly=AxiosControls"
+                    xmlns:layoutControls="clr-namespace:AxiosControls.Controls.LayoutControls;assembly=AxiosControls">
 
   <!--  AxiosContentPage  -->
-  <Style ApplyToDerivedTypes="True" TargetType="controls:AxiosContentPage">
+  <Style ApplyToDerivedTypes="True" TargetType="layoutControls:AxiosContentPage">
     <Setter Property="BackgroundImageSource" Value="MainBackground.png" />
   </Style>
 
   <!--  AxiosGrid  -->
-  <Style ApplyToDerivedTypes="True" TargetType="controls:AxiosGrid">
+  <Style ApplyToDerivedTypes="True" TargetType="layoutControls:AxiosGrid">
     <Setter Property="AxiosBackgroundView">
       <Setter.Value>
         <ContentView BackgroundColor="LightGray"

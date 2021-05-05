@@ -1,6 +1,6 @@
 ﻿namespace DrobnyZivnostnik.Views.User
 {
-    using AxiosControls.Controls;
+    using AxiosControls.Controls.LayoutControls;
 
     public partial class UserDetailView : AxiosContentPage
     {

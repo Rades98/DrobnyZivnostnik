@@ -3,7 +3,7 @@
     using System;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
-    using AxiosControls.Controls;
+    using AxiosControls.Controls.LayoutControls;
     using AxiosServices.Services.Interfaces;
     using Xamarin.Forms;
 

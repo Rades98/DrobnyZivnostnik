@@ -3,6 +3,10 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
+    /// <summary>
+    /// Required when other property is not null
+    /// </summary>
+    /// <seealso cref="System.ComponentModel.DataAnnotations.ValidationAttribute" />
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = true)]
     public sealed class AxiosRequiredWhenNotNullAttribute : ValidationAttribute
     {
@@ -13,11 +17,11 @@
         private readonly AxiosRequiredAttribute _strictRequiredAttribute = new AxiosRequiredAttribute();
 
 
-        public AxiosRequiredWhenNotNullAttribute(string validatedPropertyName, string propertyName)
+        public AxiosRequiredWhenNotNullAttribute(string validatedPropertyName, string propertyName, string errorMessage = null)
         {
             ValidatedPropertyName = validatedPropertyName;
             DependentPropertyName = propertyName;
-            ErrorMessage = _strictRequiredAttribute.ErrorMessage;
+            ErrorMessage = errorMessage ?? _strictRequiredAttribute.ErrorMessage;
         }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
